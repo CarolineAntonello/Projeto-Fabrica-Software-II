@@ -36,7 +36,6 @@ namespace SistemaGrafica.Infra.ORM.Base
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-
             modelBuilder.Configurations.Add(new ProdutoConfiguracao());
             modelBuilder.Configurations.Add(new ServicoConfiguracao());
             modelBuilder.Configurations.Add(new OrcamentoConfiguracao());
