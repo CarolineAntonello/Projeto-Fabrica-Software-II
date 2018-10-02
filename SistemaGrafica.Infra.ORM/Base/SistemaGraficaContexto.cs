@@ -43,6 +43,7 @@ namespace SistemaGrafica.Infra.ORM.Base
             modelBuilder.Configurations.Add(new ClienteFisicoConfiguracao());
             modelBuilder.Configurations.Add(new FornecedorConfiguracao());
             base.OnModelCreating(modelBuilder);
+
         }
     }
 }
