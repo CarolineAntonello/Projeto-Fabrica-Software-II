@@ -40,16 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Base\Entidade.cs" />
-    <Compile Include="feature\ClientesFisicos\ClienteFisico.cs" />
-    <Compile Include="feature\ClientesJuridicos\ClienteJuridico.cs" />
-    <Compile Include="feature\Enderecos\Endereco.cs" />
-    <Compile Include="feature\Fornecedores\Fornecedor.cs" />
-    <Compile Include="feature\Orcamentos\Orcamento.cs" />
-    <Compile Include="feature\Produtos\Produto.cs" />
-    <Compile Include="feature\Servicos\Servico.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="feature\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

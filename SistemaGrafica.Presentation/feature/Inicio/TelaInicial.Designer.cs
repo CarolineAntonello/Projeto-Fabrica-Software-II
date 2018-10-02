@@ -126,7 +126,7 @@
             this.columnRazaoSocial});
             this.dataGridView1.Location = new System.Drawing.Point(8, 299);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1311, 294);
+            this.dataGridView1.Size = new System.Drawing.Size(1301, 361);
             this.dataGridView1.TabIndex = 15;
             // 
             // columnNome
@@ -184,7 +184,6 @@
             this.label9.Size = new System.Drawing.Size(65, 20);
             this.label9.TabIndex = 24;
             this.label9.Text = "Numero";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // txtNumero
             // 
@@ -192,7 +191,6 @@
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(288, 26);
             this.txtNumero.TabIndex = 23;
-            this.txtNumero.TextChanged += new System.EventHandler(this.txtNumero_TextChanged);
             // 
             // cmxUf
             // 
@@ -251,7 +249,6 @@
             this.label5.Size = new System.Drawing.Size(59, 20);
             this.label5.TabIndex = 15;
             this.label5.Text = "Cidade";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // textCidade
             // 
@@ -259,7 +256,6 @@
             this.textCidade.Name = "textCidade";
             this.textCidade.Size = new System.Drawing.Size(300, 26);
             this.textCidade.TabIndex = 14;
-            this.textCidade.TextChanged += new System.EventHandler(this.textCidade_TextChanged);
             // 
             // lblBairro
             // 
@@ -269,7 +265,6 @@
             this.lblBairro.Size = new System.Drawing.Size(51, 20);
             this.lblBairro.TabIndex = 13;
             this.lblBairro.Text = "Bairro";
-            this.lblBairro.Click += new System.EventHandler(this.lblBairro_Click);
             // 
             // txtBairro
             // 
@@ -277,7 +272,6 @@
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(300, 26);
             this.txtBairro.TabIndex = 12;
-            this.txtBairro.TextChanged += new System.EventHandler(this.txtBairro_TextChanged);
             // 
             // label4
             // 
@@ -303,7 +297,6 @@
             this.label3.Size = new System.Drawing.Size(118, 20);
             this.label3.TabIndex = 11;
             this.label3.Text = "Tipo de Pessoa";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // cbxTipo
             // 
@@ -312,7 +305,6 @@
             this.cbxTipo.Name = "cbxTipo";
             this.cbxTipo.Size = new System.Drawing.Size(420, 28);
             this.cbxTipo.TabIndex = 10;
-            this.cbxTipo.SelectedIndexChanged += new System.EventHandler(this.cbxTipo_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -322,7 +314,6 @@
             this.label2.Size = new System.Drawing.Size(132, 20);
             this.label2.TabIndex = 9;
             this.label2.Text = "Incrição Estadual";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtEstadual
             // 
@@ -330,7 +321,6 @@
             this.txtEstadual.Name = "txtEstadual";
             this.txtEstadual.Size = new System.Drawing.Size(420, 26);
             this.txtEstadual.TabIndex = 8;
-            this.txtEstadual.TextChanged += new System.EventHandler(this.txtEstadual_TextChanged);
             // 
             // label1
             // 
@@ -340,7 +330,6 @@
             this.label1.Size = new System.Drawing.Size(135, 20);
             this.label1.TabIndex = 7;
             this.label1.Text = "Incrição Municipal";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtMunicipal
             // 
@@ -348,7 +337,6 @@
             this.txtMunicipal.Name = "txtMunicipal";
             this.txtMunicipal.Size = new System.Drawing.Size(420, 26);
             this.txtMunicipal.TabIndex = 6;
-            this.txtMunicipal.TextChanged += new System.EventHandler(this.txtMunicipal_TextChanged);
             // 
             // lblCnpj
             // 
