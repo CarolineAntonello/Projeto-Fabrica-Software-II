@@ -14,7 +14,6 @@ namespace SistemaGrafica.Infra.ORM.features.Fornecedores
         {
             ToTable("TBFornecedor");
             HasKey(fc => fc.Id);
-            Property(fc => fc.Id).HasColumnName("idFornecedor");
             Property(fc => fc.Nome).HasColumnName("Nome").HasColumnType("varchar").HasMaxLength(100).IsRequired();
             Property(fc => fc.CNPJuridica).HasColumnName("Cnpj").HasColumnType("char").HasMaxLength(11).IsRequired();
             Property(fc => fc.RazaoSocial).HasColumnName("RazaoSocial").HasColumnType("varchar").HasMaxLength(100).IsRequired();

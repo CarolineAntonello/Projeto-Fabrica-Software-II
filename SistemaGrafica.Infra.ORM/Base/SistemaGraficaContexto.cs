@@ -10,13 +10,8 @@ using SistemaGrafica.Infra.ORM.features.Fornecedores;
 using SistemaGrafica.Infra.ORM.features.Orcamentos;
 using SistemaGrafica.Infra.ORM.features.Produtos;
 using SistemaGrafica.Infra.ORM.features.Servicos;
-using System;
-using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SistemaGrafica.Infra.ORM.Base
 {
@@ -43,7 +38,6 @@ namespace SistemaGrafica.Infra.ORM.Base
             modelBuilder.Configurations.Add(new ClienteFisicoConfiguracao());
             modelBuilder.Configurations.Add(new FornecedorConfiguracao());
             base.OnModelCreating(modelBuilder);
-
         }
     }
 }

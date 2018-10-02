@@ -50,6 +50,11 @@
     <Compile Include="feature\Servicos\Servico.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaGrafica.Infra\SistemaGrafica.Infra.csproj">
+      <Project>{4ec28090-6ce1-4400-a0c3-531a46575121}</Project>
+      <Name>SistemaGrafica.Infra</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

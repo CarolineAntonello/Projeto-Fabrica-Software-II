@@ -14,7 +14,6 @@ namespace SistemaGrafica.Infra.ORM.features.ClientesFisicos
         {
             ToTable("TBClienteFisico");
             HasKey(cf => cf.Id);
-            Property(cf => cf.Id).HasColumnName("idClienteFisico");
             Property(cf => cf.Nome).HasColumnName("Nome").HasColumnType("varchar").HasMaxLength(100).IsRequired();
             Property(cf => cf.CPFisica).HasColumnName("Cpf").HasColumnType("char").HasMaxLength(11).IsRequired();
             Property(cf => cf.TelefonePrincipal).HasColumnName("TelefonePrincipal").HasColumnType("int").IsRequired();
