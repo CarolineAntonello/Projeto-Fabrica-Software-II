@@ -22,5 +22,9 @@ namespace SistemaGrafica.Presentation.feature.Inicio
 
         }
 
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
