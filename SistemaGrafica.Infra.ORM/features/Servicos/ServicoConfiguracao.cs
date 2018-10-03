@@ -14,10 +14,9 @@ namespace SistemaGrafica.Infra.ORM.features.Servicos
         {
             ToTable("TBServico");
             HasKey(sf => sf.Id);
-            Property(sf => sf.Id).HasColumnName("idServico");
             Property(sf => sf.TipoServico).HasColumnName("tipoServico").HasColumnType("varchar").HasMaxLength(50).IsRequired();
-            Property(sf => sf.ValorTotal).HasColumnName("valorTotal").HasColumnType("int").IsRequired();
-            Property(sf => sf.ValorUnitario).HasColumnName("valorUnitario").HasColumnType("int").IsRequired();
+            Property(sf => sf.ValorTotal).HasColumnName("valorTotal").IsRequired();
+            Property(sf => sf.ValorUnitario).HasColumnName("valorUnitario").IsRequired();
         }
     }
 }

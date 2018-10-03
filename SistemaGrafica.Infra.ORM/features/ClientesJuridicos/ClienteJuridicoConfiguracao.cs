@@ -14,7 +14,6 @@ namespace SistemaGrafica.Infra.ORM.features.ClientesJuridicos
         {
             ToTable("TBClienteJuridico");
             HasKey(cj => cj.Id);
-            Property(cj => cj.Id).HasColumnName("idClienteJuridico");
             Property(cf => cf.CNPJuridica).HasColumnName("Cnpj").HasColumnType("char").HasMaxLength(11);
             Property(cj => cj.Nome).HasColumnName("Nome").HasColumnType("varchar").HasMaxLength(100).IsRequired();
             Property(cj => cj.RazaoSocial).HasColumnName("RazaoSocial").HasColumnType("varchar").HasMaxLength(100).IsRequired();

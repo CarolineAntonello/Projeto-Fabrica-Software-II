@@ -40,6 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="common\cpfs\CPF.cs" />
+    <Compile Include="common\cpfs\CpfInvalidoException.cs" />
+    <Compile Include="common\cpnjs\CNPJ.cs" />
+    <Compile Include="common\cpnjs\CnpjInvalidoException.cs" />
+    <Compile Include="exceptions\InfrastructureException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
