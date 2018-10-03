@@ -22,5 +22,14 @@ namespace SistemaGrafica.Presentation.feature.Inicio
 
         }
 
+        private void txtEstadual_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAlterar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
