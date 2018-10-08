@@ -31,5 +31,10 @@ namespace SistemaGrafica.Presentation.feature.Inicio
         {
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
