@@ -1,12 +1,5 @@
 ﻿using SistemaGrafica.Presentation.feature.Inicio;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SistemaGrafica.Presentation
@@ -35,9 +28,19 @@ namespace SistemaGrafica.Presentation
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            TelaInicial inicial = new TelaInicial();
-            inicial.Show();
-            this.Hide();
+            string usuario = "admin";
+            string senha = "123";
+            if(txtUsuario.Text == usuario && txtSenha.Text == senha)
+            {
+                TelaInicial inicial = new TelaInicial();
+                inicial.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Login Incorreto!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
     }
 }

@@ -41,13 +41,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\Entidade.cs" />
-    <Compile Include="feature\ClientesFisicos\ClienteFisico.cs" />
-    <Compile Include="feature\ClientesJuridicos\ClienteJuridico.cs" />
-    <Compile Include="feature\Enderecos\Endereco.cs" />
-    <Compile Include="feature\Fornecedores\Fornecedor.cs" />
-    <Compile Include="feature\Orcamentos\Orcamento.cs" />
-    <Compile Include="feature\Produtos\Produto.cs" />
-    <Compile Include="feature\Servicos\Servico.cs" />
+    <Compile Include="Feature\ClientesFisicos\ClienteFisico.cs" />
+    <Compile Include="Feature\ClientesJuridicos\ClienteJuridico.cs" />
+    <Compile Include="Feature\Enderecos\Endereco.cs" />
+    <Compile Include="Feature\Fornecedores\Fornecedor.cs" />
+    <Compile Include="Feature\Orcamentos\Orcamento.cs" />
+    <Compile Include="Feature\Produtos\Produto.cs" />
+    <Compile Include="Feature\Servicos\Servico.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
