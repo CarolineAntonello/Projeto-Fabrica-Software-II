@@ -48,13 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\SistemaGraficaContexto.cs" />
-    <Compile Include="features\ClientesFisicos\ClienteFisicoConfiguracao.cs" />
-    <Compile Include="features\ClientesJuridicos\ClienteJuridicoConfiguracao.cs" />
-    <Compile Include="features\Fornecedores\FornecedorConfiguracao.cs" />
-    <Compile Include="features\Orcamentos\OrcamentoConfiguracao.cs" />
-    <Compile Include="features\Produtos\ProdutoConfiguracao.cs" />
-    <Compile Include="features\Produtos\ProdutoRepositorio.cs" />
-    <Compile Include="features\Servicos\ServicoConfiguracao.cs" />
+    <Compile Include="Features\ClientesFisicos\ClienteFisicoConfiguracao.cs" />
+    <Compile Include="Features\ClientesJuridicos\ClienteJuridicoConfiguracao.cs" />
+    <Compile Include="Features\Fornecedores\FornecedorConfiguracao.cs" />
+    <Compile Include="Features\Orcamentos\OrcamentoConfiguracao.cs" />
+    <Compile Include="Features\Produtos\ProdutoConfiguracao.cs" />
+    <Compile Include="Features\Servicos\ServicoConfiguracao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
