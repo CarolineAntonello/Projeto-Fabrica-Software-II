@@ -1,9 +1,5 @@
 ﻿using SistemaGrafica.Domain.Base;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using SistemaGrafica.Domain.Feature.Servicos;
 
 namespace SistemaGrafica.Domain.feature.Servicos
 {
@@ -11,6 +7,13 @@ namespace SistemaGrafica.Domain.feature.Servicos
     {
         public string TipoServico { get; set; }
         public decimal ValorUnitario { get; set; }
-        public decimal ValorTotal { get; set; }
+
+        public override void Validar()
+        {
+            if(TipoServico == null)
+                throw new ServicoTipoServicoVazioException();
+            if (ValorUnitario < 0)
+                throw new ServicoValorUnitarioMenorQueZero();
+        }
     }
 }

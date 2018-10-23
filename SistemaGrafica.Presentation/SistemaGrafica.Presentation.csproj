@@ -45,24 +45,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="feature\Inicio\TelaInicial.cs">
+    <Compile Include="Feature\Inicio\TelaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="feature\Inicio\TelaInicial.Designer.cs">
+    <Compile Include="Feature\Inicio\TelaInicial.Designer.cs">
       <DependentUpon>TelaInicial.cs</DependentUpon>
     </Compile>
-    <Compile Include="feature\Login\TelaLogin.cs">
+    <Compile Include="Feature\Login\TelaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="feature\Login\TelaLogin.Designer.cs">
+    <Compile Include="Feature\Login\TelaLogin.Designer.cs">
       <DependentUpon>TelaLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="feature\Inicio\TelaInicial.resx">
+    <EmbeddedResource Include="Feature\Inicio\TelaInicial.resx">
       <DependentUpon>TelaInicial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="feature\Login\TelaLogin.resx">
+    <EmbeddedResource Include="Feature\Login\TelaLogin.resx">
       <DependentUpon>TelaLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -86,6 +86,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Background\imagens\fundo-login-2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
