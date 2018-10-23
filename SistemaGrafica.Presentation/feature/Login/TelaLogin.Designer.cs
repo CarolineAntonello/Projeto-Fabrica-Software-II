@@ -33,7 +33,6 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.MaskedTextBox();
             this.btnEntrar = new System.Windows.Forms.Button();
-            this.btnSair = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
             // 
@@ -59,23 +58,13 @@
             // 
             // btnEntrar
             // 
-            this.btnEntrar.Location = new System.Drawing.Point(594, 403);
+            this.btnEntrar.Location = new System.Drawing.Point(656, 399);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(110, 31);
             this.btnEntrar.TabIndex = 2;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = true;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
-            // 
-            // btnSair
-            // 
-            this.btnSair.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnSair.Location = new System.Drawing.Point(719, 403);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(110, 31);
-            this.btnSair.TabIndex = 3;
-            this.btnSair.Text = "Sair";
-            this.btnSair.UseVisualStyleBackColor = true;
             // 
             // imageList1
             // 
@@ -88,9 +77,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.CancelButton = this.btnSair;
             this.ClientSize = new System.Drawing.Size(1179, 661);
-            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtUsuario);
@@ -110,7 +97,6 @@
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.MaskedTextBox txtSenha;
         private System.Windows.Forms.Button btnEntrar;
-        private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.ImageList imageList1;
     }
 }

@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\Entidade.cs" />
+    <Compile Include="Exceptions\BusinessException.cs" />
+    <Compile Include="Exceptions\UnsupportedOperationException.cs" />
     <Compile Include="Feature\ClientesFisicos\ClienteFisico.cs" />
     <Compile Include="Feature\ClientesJuridicos\ClienteJuridico.cs" />
     <Compile Include="Feature\Enderecos\Endereco.cs" />
@@ -48,6 +50,8 @@
     <Compile Include="Feature\Orcamentos\Orcamento.cs" />
     <Compile Include="Feature\Produtos\Produto.cs" />
     <Compile Include="Feature\Servicos\Servico.cs" />
+    <Compile Include="Feature\Servicos\ServicoTipoServicoVazioException.cs" />
+    <Compile Include="Feature\Servicos\ServicoValorUnitarioMenorQueZero.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
