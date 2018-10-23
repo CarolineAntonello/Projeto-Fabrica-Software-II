@@ -15,5 +15,20 @@ namespace SistemaGrafica.Domain.feature.Produtos
         public decimal ValorUnitario { get; set; }
         public int FornecedorId { get; set; }
         public Fornecedor Fornecedor { get; set; }
+
+        public override void Validar()
+        {
+            //if (string.IsNullOrEmpty(Nome))
+            //    throw new 
+
+            if (string.IsNullOrEmpty(Descricao))
+                throw new
+
+            if (ValorUnitario <= 0)
+                throw new
+
+            if (Fornecedor == null)
+
+        }
     }
 }
