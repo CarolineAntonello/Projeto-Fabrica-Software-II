@@ -20,5 +20,10 @@ namespace SistemaGrafica.Domain.feature.Fornecedores
         public Endereco Endereco { get; set; }
         public int TelefonePrincipal { get; set; }
         public int TelefoneSecundario { get; set; }
+
+        public override void Validar()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

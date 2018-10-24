@@ -43,15 +43,27 @@
     <Compile Include="Base\Entidade.cs" />
     <Compile Include="Exceptions\BusinessException.cs" />
     <Compile Include="Exceptions\UnsupportedOperationException.cs" />
+    <Compile Include="Feature\ClientesFisicos\ClienteCPFVazioException.cs" />
     <Compile Include="Feature\ClientesFisicos\ClienteFisico.cs" />
+    <Compile Include="Feature\ClientesJuridicos\ClienteCNPJuridicaVazioException.cs" />
+    <Compile Include="Feature\ClientesJuridicos\ClienteEnderecoVazioException.cs" />
     <Compile Include="Feature\ClientesJuridicos\ClienteJuridico.cs" />
+    <Compile Include="Feature\ClientesJuridicos\ClienteNomeVazioException.cs" />
+    <Compile Include="Feature\ClientesJuridicos\ClienteRazaoSocialVazioException.cs" />
+    <Compile Include="Feature\ClientesJuridicos\ClienteTelefoneVazioException.cs" />
     <Compile Include="Feature\Enderecos\Endereco.cs" />
+    <Compile Include="Feature\Enderecos\EnderecoBairroVaziaException.cs" />
+    <Compile Include="Feature\Enderecos\EnderecoCepVaziaException.cs" />
+    <Compile Include="Feature\Enderecos\EnderecoCidadeVaziaException.cs" />
+    <Compile Include="Feature\Enderecos\EnderecoEstadoVaziaException.cs" />
+    <Compile Include="Feature\Enderecos\EnderecoNumeroEComplementoNuloException.cs" />
+    <Compile Include="Feature\Enderecos\EnderecoRuaVaziaException.cs" />
     <Compile Include="Feature\Fornecedores\Fornecedor.cs" />
     <Compile Include="Feature\Orcamentos\Orcamento.cs" />
     <Compile Include="Feature\Produtos\Produto.cs" />
     <Compile Include="Feature\Servicos\Servico.cs" />
     <Compile Include="Feature\Servicos\ServicoTipoServicoVazioException.cs" />
-    <Compile Include="Feature\Servicos\ServicoValorUnitarioMenorQueZero.cs" />
+    <Compile Include="Feature\Servicos\ServicoValorUnitarioMenorQueZeroException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

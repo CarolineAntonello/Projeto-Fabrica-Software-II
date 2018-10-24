@@ -1,10 +1,6 @@
 ﻿using SistemaGrafica.Domain.Base;
 using SistemaGrafica.Domain.feature.Fornecedores;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SistemaGrafica.Domain.feature.Produtos
 {
@@ -15,5 +11,10 @@ namespace SistemaGrafica.Domain.feature.Produtos
         public decimal ValorUnitario { get; set; }
         public int FornecedorId { get; set; }
         public Fornecedor Fornecedor { get; set; }
+
+        public override void Validar()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
