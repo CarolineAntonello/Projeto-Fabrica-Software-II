@@ -53,6 +53,7 @@
     <Compile Include="Features\Fornecedores\FornecedorConfiguracao.cs" />
     <Compile Include="Features\Orcamentos\OrcamentoConfiguracao.cs" />
     <Compile Include="Features\Produtos\ProdutoConfiguracao.cs" />
+    <Compile Include="Features\Produtos\ProdutoRepositorio.cs" />
     <Compile Include="Features\Servicos\ServicoConfiguracao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
