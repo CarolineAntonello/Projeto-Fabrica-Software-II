@@ -1,5 +1,6 @@
 ﻿using SistemaGrafica.Domain.Base;
 using SistemaGrafica.Domain.feature.Fornecedores;
+using SistemaGrafica.Domain.Feature.Produtos;
 using System;
 
 namespace SistemaGrafica.Domain.feature.Produtos
@@ -14,7 +15,17 @@ namespace SistemaGrafica.Domain.feature.Produtos
 
         public override void Validar()
         {
-            throw new NotImplementedException();
+            if (string.IsNullOrEmpty(Nome))
+                throw new ProdutoNomeNuloOuVazioException();
+
+            if (string.IsNullOrEmpty(Descricao))
+                throw new ProdutoDescricaoNuloOuVazioException();
+
+            if (ValorUnitario <= 0)
+                throw new ProdutoValorUnitarioMenorQueZeroException();
+
+            if (Fornecedor == null)
+                throw new ProdutoFornecedorNuloException();
         }
     }
 }
