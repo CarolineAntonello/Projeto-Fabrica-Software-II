@@ -2,12 +2,6 @@
 using SistemaGrafica.Domain.feature.Enderecos;
 using SistemaGrafica.Domain.Features.Fornecedores;
 using SistemaGrafica.Infra.common.cpnj;
-using SistemaGrafica.Infra.ORM.Features.Fornecedores;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SistemaGrafica.Domain.feature.Fornecedores
 {
