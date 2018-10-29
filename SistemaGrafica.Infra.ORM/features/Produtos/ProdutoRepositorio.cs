@@ -1,10 +1,7 @@
 ﻿using SistemaGrafica.Domain.feature.Produtos;
 using SistemaGrafica.Infra.ORM.Base;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SistemaGrafica.Infra.ORM.features.Produtos
 {

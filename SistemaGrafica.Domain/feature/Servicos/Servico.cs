@@ -13,7 +13,7 @@ namespace SistemaGrafica.Domain.feature.Servicos
             if(TipoServico == null)
                 throw new ServicoTipoServicoVazioException();
             if (ValorUnitario < 0)
-                throw new ServicoValorUnitarioMenorQueZero();
+                throw new ServicoValorUnitarioMenorQueZeroException();
         }
     }
 }
