@@ -43,7 +43,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="feature\" />
+    <Folder Include="Feature\ClientesFisicos\" />
+    <Folder Include="Feature\ClientesJuridicos\" />
+    <Folder Include="Feature\Enderecos\" />
+    <Folder Include="Feature\Fornecedores\" />
+    <Folder Include="Feature\Orcamentos\" />
+    <Folder Include="Feature\Produtos\" />
+    <Folder Include="Feature\Servicos\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
