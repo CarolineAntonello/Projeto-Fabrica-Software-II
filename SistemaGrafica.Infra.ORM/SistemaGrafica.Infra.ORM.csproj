@@ -55,6 +55,7 @@
     <Compile Include="Features\Fornecedores\FornecedorConfiguracao.cs" />
     <Compile Include="Features\Fornecedores\FornecedoresRespositorio.cs" />
     <Compile Include="Features\Orcamentos\OrcamentoConfiguracao.cs" />
+    <Compile Include="Features\Orcamentos\OrcamentoRepositorio.cs" />
     <Compile Include="Features\Produtos\ProdutoConfiguracao.cs" />
     <Compile Include="Features\Produtos\ProdutoRepositorio.cs" />
     <Compile Include="Features\Servicos\ServicoConfiguracao.cs" />

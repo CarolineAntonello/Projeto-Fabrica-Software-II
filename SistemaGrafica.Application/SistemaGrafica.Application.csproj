@@ -40,16 +40,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Feature\ClientesFisicos\ClienteFisicoService.cs" />
+    <Compile Include="Feature\ClientesFisicos\IClienteFisicoService.cs" />
+    <Compile Include="Feature\ClientesJuridicos\ClienteJuridicoService.cs" />
+    <Compile Include="Feature\ClientesJuridicos\IClienteJuridicoService.cs" />
+    <Compile Include="Feature\Enderecos\EnderecoService.cs" />
+    <Compile Include="Feature\Enderecos\IEnderecoService.cs" />
+    <Compile Include="Feature\Fornecedores\FornecedorService.cs" />
+    <Compile Include="Feature\Fornecedores\IFornecedorService.cs" />
+    <Compile Include="Feature\Orcamentos\IOrcamentoService.cs" />
+    <Compile Include="Feature\Orcamentos\OrcamentoService.cs" />
+    <Compile Include="Feature\Produtos\IProdutoService.cs" />
+    <Compile Include="Feature\Produtos\ProdutoService.cs" />
+    <Compile Include="Feature\Servicos\IServicoService.cs" />
+    <Compile Include="Feature\Servicos\ServicoService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Feature\ClientesFisicos\" />
-    <Folder Include="Feature\ClientesJuridicos\" />
-    <Folder Include="Feature\Enderecos\" />
-    <Folder Include="Feature\Fornecedores\" />
-    <Folder Include="Feature\Orcamentos\" />
-    <Folder Include="Feature\Produtos\" />
-    <Folder Include="Feature\Servicos\" />
+    <ProjectReference Include="..\SistemaGrafica.Domain\SistemaGrafica.Domain.csproj">
+      <Project>{8F3AD181-7138-4380-9F07-E5EAE31EC87E}</Project>
+      <Name>SistemaGrafica.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
