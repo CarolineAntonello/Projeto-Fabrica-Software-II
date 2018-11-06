@@ -16,6 +16,7 @@ namespace SistemaGrafica.Infra.ORM.features.Servicos
             HasKey(sf => sf.Id);
             Property(sf => sf.TipoServico).HasColumnName("tipoServico").HasColumnType("varchar").HasMaxLength(50).IsRequired();
             Property(sf => sf.ValorUnitario).HasColumnName("valorUnitario").IsRequired();
+            Property(sf => sf.Descricao).HasColumnName("descricao");
         }
     }
 }

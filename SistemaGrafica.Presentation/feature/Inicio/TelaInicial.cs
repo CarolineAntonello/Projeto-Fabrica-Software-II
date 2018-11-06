@@ -14,7 +14,7 @@ namespace SistemaGrafica.Presentation.feature.Inicio
         {
             _service = service;
             InitializeComponent();
-            btnSalvar.Enabled = false;
+            //btnSalvar.Enabled = false;
         }
 
         public Servico NovoServico
@@ -24,6 +24,7 @@ namespace SistemaGrafica.Presentation.feature.Inicio
                 _servico = new Servico();
                 _servico.ValorUnitario = Convert.ToInt32(txtValor.Text);
                 _servico.TipoServico = cbxTipo.Text;
+                _servico.Descricao = txtDescricao.Text;
                 return _servico;
             }
         }
@@ -34,15 +35,18 @@ namespace SistemaGrafica.Presentation.feature.Inicio
             {
                 _servico.ValorUnitario = Convert.ToInt32(txtValor.Text);
                 _servico.TipoServico = cbxTipo.Text;
+                _servico.Descricao = txtDescricao.Text;
                 return _servico;
             }
             set
             {
                 txtValor.Text = string.Empty;
                 cbxTipo.Text = string.Empty;
+                txtDescricao.Text = string.Empty;
                 _servico = value;
                 txtValor.Text = Convert.ToString(_servico.ValorUnitario);
                 cbxTipo.Text = _servico.TipoServico;
+                txtDescricao.Text = _servico.Descricao;
 
             }
         }

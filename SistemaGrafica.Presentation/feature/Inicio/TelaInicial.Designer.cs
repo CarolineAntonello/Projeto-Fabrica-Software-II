@@ -31,6 +31,8 @@
             this.toolStripSobre = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSair = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPageServico = new System.Windows.Forms.TabPage();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.lblErro = new System.Windows.Forms.ToolStripStatusLabel();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
@@ -155,10 +157,9 @@
             this.txtPNome = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.lblPNome = new System.Windows.Forms.Label();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.lblErro = new System.Windows.Forms.ToolStripStatusLabel();
             this.menu.SuspendLayout();
             this.tabPageServico.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblServico)).BeginInit();
             this.tabPageOrcamento.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -171,7 +172,6 @@
             this.tabControInicio.SuspendLayout();
             this.tabPageProduto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menu
@@ -225,6 +225,22 @@
             this.tabPageServico.TabIndex = 5;
             this.tabPageServico.Text = "Serviços";
             this.tabPageServico.UseVisualStyleBackColor = true;
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lblErro});
+            this.statusStrip1.Location = new System.Drawing.Point(3, 663);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1336, 22);
+            this.statusStrip1.TabIndex = 26;
+            this.statusStrip1.Text = "statusStrip1";
+            this.statusStrip1.TextChanged += new System.EventHandler(this.txtEstadual_TextChanged);
+            // 
+            // lblErro
+            // 
+            this.lblErro.Name = "lblErro";
+            this.lblErro.Size = new System.Drawing.Size(0, 17);
             // 
             // btnAlterar
             // 
@@ -316,7 +332,7 @@
             this.dataGridViewTextBoxColumn7});
             this.tblServico.Location = new System.Drawing.Point(6, 301);
             this.tblServico.Name = "tblServico";
-            this.tblServico.Size = new System.Drawing.Size(1301, 361);
+            this.tblServico.Size = new System.Drawing.Size(1301, 321);
             this.tblServico.TabIndex = 16;
             // 
             // dataGridViewTextBoxColumn5
@@ -360,7 +376,7 @@
             this.tabPageOrcamento.Location = new System.Drawing.Point(4, 29);
             this.tabPageOrcamento.Name = "tabPageOrcamento";
             this.tabPageOrcamento.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageOrcamento.Size = new System.Drawing.Size(1342, 668);
+            this.tabPageOrcamento.Size = new System.Drawing.Size(1342, 688);
             this.tabPageOrcamento.TabIndex = 3;
             this.tabPageOrcamento.Text = "Orçamentos";
             this.tabPageOrcamento.UseVisualStyleBackColor = true;
@@ -571,7 +587,7 @@
             this.tabPageFornecedor.Location = new System.Drawing.Point(4, 29);
             this.tabPageFornecedor.Name = "tabPageFornecedor";
             this.tabPageFornecedor.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageFornecedor.Size = new System.Drawing.Size(1342, 668);
+            this.tabPageFornecedor.Size = new System.Drawing.Size(1342, 688);
             this.tabPageFornecedor.TabIndex = 4;
             this.tabPageFornecedor.Text = "Fornecedores";
             this.tabPageFornecedor.UseVisualStyleBackColor = true;
@@ -899,7 +915,7 @@
             this.tabPageCliente.Location = new System.Drawing.Point(4, 29);
             this.tabPageCliente.Name = "tabPageCliente";
             this.tabPageCliente.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCliente.Size = new System.Drawing.Size(1342, 668);
+            this.tabPageCliente.Size = new System.Drawing.Size(1342, 688);
             this.tabPageCliente.TabIndex = 0;
             this.tabPageCliente.Text = "Clientes";
             this.tabPageCliente.UseVisualStyleBackColor = true;
@@ -1235,7 +1251,7 @@
             this.tabPageProduto.Controls.Add(this.lblPNome);
             this.tabPageProduto.Location = new System.Drawing.Point(4, 29);
             this.tabPageProduto.Name = "tabPageProduto";
-            this.tabPageProduto.Size = new System.Drawing.Size(1342, 668);
+            this.tabPageProduto.Size = new System.Drawing.Size(1342, 688);
             this.tabPageProduto.TabIndex = 6;
             this.tabPageProduto.Text = "Produtos";
             this.tabPageProduto.UseVisualStyleBackColor = true;
@@ -1372,22 +1388,6 @@
             this.lblPNome.TabIndex = 24;
             this.lblPNome.Text = "Nome";
             // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lblErro});
-            this.statusStrip1.Location = new System.Drawing.Point(3, 663);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1336, 22);
-            this.statusStrip1.TabIndex = 26;
-            this.statusStrip1.Text = "statusStrip1";
-            this.statusStrip1.TextChanged += new System.EventHandler(this.txtEstadual_TextChanged);
-            // 
-            // lblErro
-            // 
-            this.lblErro.Name = "lblErro";
-            this.lblErro.Size = new System.Drawing.Size(0, 17);
-            // 
             // TelaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1406,6 +1406,8 @@
             this.menu.PerformLayout();
             this.tabPageServico.ResumeLayout(false);
             this.tabPageServico.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblServico)).EndInit();
             this.tabPageOrcamento.ResumeLayout(false);
             this.tabPageOrcamento.PerformLayout();
@@ -1424,8 +1426,6 @@
             this.tabPageProduto.ResumeLayout(false);
             this.tabPageProduto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

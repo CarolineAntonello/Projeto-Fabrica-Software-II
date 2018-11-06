@@ -7,6 +7,7 @@ namespace SistemaGrafica.Domain.feature.Servicos
     {
         public string TipoServico { get; set; }
         public decimal ValorUnitario { get; set; }
+        public string Descricao { get; set; }
 
         public override void Validar()
         {
