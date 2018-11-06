@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistemaGrafica.Application.Feature.Fornecedores
+namespace SistemaGrafica.Aplication.Feature.Fornecedores
 {
     public interface IFornecedorService
     {

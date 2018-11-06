@@ -1,4 +1,6 @@
-﻿using SistemaGrafica.Presentation.feature.Inicio;
+﻿using SistemaGrafica.Aplication.Feature.Servicos;
+using SistemaGrafica.Domain.Feature.Servicos;
+using SistemaGrafica.Presentation.feature.Inicio;
 using System;
 using System.Windows.Forms;
 
@@ -28,18 +30,22 @@ namespace SistemaGrafica.Presentation
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            //string usuario = "admin";
-            //string senha = "123";
-            //if(txtUsuario.Text == usuario && txtSenha.Text == senha)
-            //{
-            TelaInicial inicial = new TelaInicial();
-            inicial.Show();
-            this.Hide();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Login Incorreto!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+            ServicoService _service;
+            IServicoRepositorio _servicoRepositorio;
+            string usuario = "admin";
+            string senha = "123";
+            if (txtUsuario.Text == usuario && txtSenha.Text == senha)
+            {
+                
+                _service = new ServicoService(null);
+                TelaInicial inicial = new TelaInicial(_service);
+                inicial.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Login Incorreto!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
     }

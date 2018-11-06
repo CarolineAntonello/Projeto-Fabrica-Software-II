@@ -31,6 +31,8 @@
             this.toolStripSobre = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSair = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPageServico = new System.Windows.Forms.TabPage();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.lblErro = new System.Windows.Forms.ToolStripStatusLabel();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
@@ -45,6 +47,27 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPageOrcamento = new System.Windows.Forms.TabPage();
+            this.cbxPagamento = new System.Windows.Forms.ComboBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.cbxContato = new System.Windows.Forms.ComboBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.cbxSituacao = new System.Windows.Forms.ComboBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.cbxCliente = new System.Windows.Forms.ComboBox();
+            this.cbxProdutoFornecido = new System.Windows.Forms.ComboBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             this.tabPageFornecedor = new System.Windows.Forms.TabPage();
             this.btnFAlterar = new System.Windows.Forms.Button();
             this.btnFExcluir = new System.Windows.Forms.Button();
@@ -134,31 +157,12 @@
             this.txtPNome = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.lblPNome = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.cbxProdutoFornecido = new System.Windows.Forms.ComboBox();
-            this.cbxCliente = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label31 = new System.Windows.Forms.Label();
-            this.cbxSituacao = new System.Windows.Forms.ComboBox();
-            this.cbxContato = new System.Windows.Forms.ComboBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.cbxPagamento = new System.Windows.Forms.ComboBox();
-            this.label33 = new System.Windows.Forms.Label();
             this.menu.SuspendLayout();
             this.tabPageServico.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblServico)).BeginInit();
             this.tabPageOrcamento.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPageFornecedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblFornecedor)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -168,7 +172,6 @@
             this.tabControInicio.SuspendLayout();
             this.tabPageProduto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // menu
@@ -204,6 +207,7 @@
             // 
             // tabPageServico
             // 
+            this.tabPageServico.Controls.Add(this.statusStrip1);
             this.tabPageServico.Controls.Add(this.btnAlterar);
             this.tabPageServico.Controls.Add(this.btnExcluir);
             this.tabPageServico.Controls.Add(this.btnSalvar);
@@ -217,10 +221,26 @@
             this.tabPageServico.Location = new System.Drawing.Point(4, 29);
             this.tabPageServico.Name = "tabPageServico";
             this.tabPageServico.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageServico.Size = new System.Drawing.Size(1342, 668);
+            this.tabPageServico.Size = new System.Drawing.Size(1342, 688);
             this.tabPageServico.TabIndex = 5;
             this.tabPageServico.Text = "Serviços";
             this.tabPageServico.UseVisualStyleBackColor = true;
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lblErro});
+            this.statusStrip1.Location = new System.Drawing.Point(3, 663);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1336, 22);
+            this.statusStrip1.TabIndex = 26;
+            this.statusStrip1.Text = "statusStrip1";
+            this.statusStrip1.TextChanged += new System.EventHandler(this.txtEstadual_TextChanged);
+            // 
+            // lblErro
+            // 
+            this.lblErro.Name = "lblErro";
+            this.lblErro.Size = new System.Drawing.Size(0, 17);
             // 
             // btnAlterar
             // 
@@ -312,7 +332,7 @@
             this.dataGridViewTextBoxColumn7});
             this.tblServico.Location = new System.Drawing.Point(6, 301);
             this.tblServico.Name = "tblServico";
-            this.tblServico.Size = new System.Drawing.Size(1301, 361);
+            this.tblServico.Size = new System.Drawing.Size(1301, 321);
             this.tblServico.TabIndex = 16;
             // 
             // dataGridViewTextBoxColumn5
@@ -356,10 +376,193 @@
             this.tabPageOrcamento.Location = new System.Drawing.Point(4, 29);
             this.tabPageOrcamento.Name = "tabPageOrcamento";
             this.tabPageOrcamento.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageOrcamento.Size = new System.Drawing.Size(1342, 668);
+            this.tabPageOrcamento.Size = new System.Drawing.Size(1342, 688);
             this.tabPageOrcamento.TabIndex = 3;
             this.tabPageOrcamento.Text = "Orçamentos";
             this.tabPageOrcamento.UseVisualStyleBackColor = true;
+            // 
+            // cbxPagamento
+            // 
+            this.cbxPagamento.FormattingEnabled = true;
+            this.cbxPagamento.Location = new System.Drawing.Point(897, 94);
+            this.cbxPagamento.Name = "cbxPagamento";
+            this.cbxPagamento.Size = new System.Drawing.Size(420, 28);
+            this.cbxPagamento.TabIndex = 51;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(897, 71);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(163, 20);
+            this.label33.TabIndex = 50;
+            this.label33.Text = "Forma de Pagamento";
+            // 
+            // cbxContato
+            // 
+            this.cbxContato.FormattingEnabled = true;
+            this.cbxContato.Location = new System.Drawing.Point(449, 94);
+            this.cbxContato.Name = "cbxContato";
+            this.cbxContato.Size = new System.Drawing.Size(420, 28);
+            this.cbxContato.TabIndex = 49;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(449, 71);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(122, 20);
+            this.label32.TabIndex = 48;
+            this.label32.Text = "Tipo de Contato";
+            // 
+            // cbxSituacao
+            // 
+            this.cbxSituacao.FormattingEnabled = true;
+            this.cbxSituacao.Location = new System.Drawing.Point(14, 94);
+            this.cbxSituacao.Name = "cbxSituacao";
+            this.cbxSituacao.Size = new System.Drawing.Size(420, 28);
+            this.cbxSituacao.TabIndex = 47;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(896, 9);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(44, 20);
+            this.label31.TabIndex = 46;
+            this.label31.Text = "Data";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(897, 32);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(420, 26);
+            this.dateTimePicker1.TabIndex = 45;
+            // 
+            // cbxCliente
+            // 
+            this.cbxCliente.FormattingEnabled = true;
+            this.cbxCliente.Location = new System.Drawing.Point(449, 30);
+            this.cbxCliente.Name = "cbxCliente";
+            this.cbxCliente.Size = new System.Drawing.Size(420, 28);
+            this.cbxCliente.TabIndex = 44;
+            // 
+            // cbxProdutoFornecido
+            // 
+            this.cbxProdutoFornecido.FormattingEnabled = true;
+            this.cbxProdutoFornecido.Location = new System.Drawing.Point(14, 30);
+            this.cbxProdutoFornecido.Name = "cbxProdutoFornecido";
+            this.cbxProdutoFornecido.Size = new System.Drawing.Size(420, 28);
+            this.cbxProdutoFornecido.TabIndex = 43;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewImageColumn1,
+            this.dataGridViewButtonColumn1});
+            this.dataGridView2.Location = new System.Drawing.Point(14, 214);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(1301, 445);
+            this.dataGridView2.TabIndex = 42;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn11.HeaderText = "Nome";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            this.dataGridViewTextBoxColumn11.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn11.Width = 76;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.HeaderText = "Valor Unitário";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.HeaderText = "Descrição";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.DataPropertyName = "(none)";
+            this.dataGridViewImageColumn1.HeaderText = "Editar";
+            this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewImageColumn1.ToolTipText = "Editar";
+            // 
+            // dataGridViewButtonColumn1
+            // 
+            this.dataGridViewButtonColumn1.HeaderText = "";
+            this.dataGridViewButtonColumn1.Name = "dataGridViewButtonColumn1";
+            this.dataGridViewButtonColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn1.Text = "Excluir";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(553, 178);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(231, 28);
+            this.button1.TabIndex = 41;
+            this.button1.Text = "Alterar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button2.Location = new System.Drawing.Point(790, 178);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(231, 28);
+            this.button2.TabIndex = 40;
+            this.button2.Text = "Excluir";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button3.Location = new System.Drawing.Point(316, 178);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(231, 28);
+            this.button3.TabIndex = 39;
+            this.button3.Text = "Salvar";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(14, 71);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(72, 20);
+            this.label28.TabIndex = 38;
+            this.label28.Text = "Situação";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(449, 9);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(58, 20);
+            this.label29.TabIndex = 36;
+            this.label29.Text = "Cliente";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(14, 9);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(140, 20);
+            this.label30.TabIndex = 34;
+            this.label30.Text = "Produto Fornecido";
             // 
             // tabPageFornecedor
             // 
@@ -384,7 +587,7 @@
             this.tabPageFornecedor.Location = new System.Drawing.Point(4, 29);
             this.tabPageFornecedor.Name = "tabPageFornecedor";
             this.tabPageFornecedor.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageFornecedor.Size = new System.Drawing.Size(1342, 668);
+            this.tabPageFornecedor.Size = new System.Drawing.Size(1342, 688);
             this.tabPageFornecedor.TabIndex = 4;
             this.tabPageFornecedor.Text = "Fornecedores";
             this.tabPageFornecedor.UseVisualStyleBackColor = true;
@@ -712,7 +915,7 @@
             this.tabPageCliente.Location = new System.Drawing.Point(4, 29);
             this.tabPageCliente.Name = "tabPageCliente";
             this.tabPageCliente.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCliente.Size = new System.Drawing.Size(1342, 668);
+            this.tabPageCliente.Size = new System.Drawing.Size(1342, 688);
             this.tabPageCliente.TabIndex = 0;
             this.tabPageCliente.Text = "Clientes";
             this.tabPageCliente.UseVisualStyleBackColor = true;
@@ -1031,7 +1234,7 @@
             this.tabControInicio.Location = new System.Drawing.Point(0, 28);
             this.tabControInicio.Name = "tabControInicio";
             this.tabControInicio.SelectedIndex = 0;
-            this.tabControInicio.Size = new System.Drawing.Size(1350, 701);
+            this.tabControInicio.Size = new System.Drawing.Size(1350, 721);
             this.tabControInicio.TabIndex = 0;
             // 
             // tabPageProduto
@@ -1048,7 +1251,7 @@
             this.tabPageProduto.Controls.Add(this.lblPNome);
             this.tabPageProduto.Location = new System.Drawing.Point(4, 29);
             this.tabPageProduto.Name = "tabPageProduto";
-            this.tabPageProduto.Size = new System.Drawing.Size(1342, 668);
+            this.tabPageProduto.Size = new System.Drawing.Size(1342, 688);
             this.tabPageProduto.TabIndex = 6;
             this.tabPageProduto.Text = "Produtos";
             this.tabPageProduto.UseVisualStyleBackColor = true;
@@ -1185,195 +1388,11 @@
             this.lblPNome.TabIndex = 24;
             this.lblPNome.Text = "Nome";
             // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewImageColumn1,
-            this.dataGridViewButtonColumn1});
-            this.dataGridView2.Location = new System.Drawing.Point(14, 214);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(1301, 445);
-            this.dataGridView2.TabIndex = 42;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dataGridViewTextBoxColumn11.HeaderText = "Nome";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            this.dataGridViewTextBoxColumn11.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn11.Width = 76;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.HeaderText = "Valor Unitário";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.HeaderText = "Descrição";
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.ReadOnly = true;
-            // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.DataPropertyName = "(none)";
-            this.dataGridViewImageColumn1.HeaderText = "Editar";
-            this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewImageColumn1.ToolTipText = "Editar";
-            // 
-            // dataGridViewButtonColumn1
-            // 
-            this.dataGridViewButtonColumn1.HeaderText = "";
-            this.dataGridViewButtonColumn1.Name = "dataGridViewButtonColumn1";
-            this.dataGridViewButtonColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewButtonColumn1.Text = "Excluir";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(553, 178);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(231, 28);
-            this.button1.TabIndex = 41;
-            this.button1.Text = "Alterar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button2.Location = new System.Drawing.Point(790, 178);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(231, 28);
-            this.button2.TabIndex = 40;
-            this.button2.Text = "Excluir";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button3.Location = new System.Drawing.Point(316, 178);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(231, 28);
-            this.button3.TabIndex = 39;
-            this.button3.Text = "Salvar";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(14, 71);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(72, 20);
-            this.label28.TabIndex = 38;
-            this.label28.Text = "Situação";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(449, 9);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(58, 20);
-            this.label29.TabIndex = 36;
-            this.label29.Text = "Cliente";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(14, 9);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(140, 20);
-            this.label30.TabIndex = 34;
-            this.label30.Text = "Produto Fornecido";
-            // 
-            // cbxProdutoFornecido
-            // 
-            this.cbxProdutoFornecido.FormattingEnabled = true;
-            this.cbxProdutoFornecido.Location = new System.Drawing.Point(14, 30);
-            this.cbxProdutoFornecido.Name = "cbxProdutoFornecido";
-            this.cbxProdutoFornecido.Size = new System.Drawing.Size(420, 28);
-            this.cbxProdutoFornecido.TabIndex = 43;
-            // 
-            // cbxCliente
-            // 
-            this.cbxCliente.FormattingEnabled = true;
-            this.cbxCliente.Location = new System.Drawing.Point(449, 30);
-            this.cbxCliente.Name = "cbxCliente";
-            this.cbxCliente.Size = new System.Drawing.Size(420, 28);
-            this.cbxCliente.TabIndex = 44;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(897, 32);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(420, 26);
-            this.dateTimePicker1.TabIndex = 45;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(896, 9);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(44, 20);
-            this.label31.TabIndex = 46;
-            this.label31.Text = "Data";
-            // 
-            // cbxSituacao
-            // 
-            this.cbxSituacao.FormattingEnabled = true;
-            this.cbxSituacao.Location = new System.Drawing.Point(14, 94);
-            this.cbxSituacao.Name = "cbxSituacao";
-            this.cbxSituacao.Size = new System.Drawing.Size(420, 28);
-            this.cbxSituacao.TabIndex = 47;
-            // 
-            // cbxContato
-            // 
-            this.cbxContato.FormattingEnabled = true;
-            this.cbxContato.Location = new System.Drawing.Point(449, 94);
-            this.cbxContato.Name = "cbxContato";
-            this.cbxContato.Size = new System.Drawing.Size(420, 28);
-            this.cbxContato.TabIndex = 49;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(449, 71);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(122, 20);
-            this.label32.TabIndex = 48;
-            this.label32.Text = "Tipo de Contato";
-            // 
-            // cbxPagamento
-            // 
-            this.cbxPagamento.FormattingEnabled = true;
-            this.cbxPagamento.Location = new System.Drawing.Point(897, 94);
-            this.cbxPagamento.Name = "cbxPagamento";
-            this.cbxPagamento.Size = new System.Drawing.Size(420, 28);
-            this.cbxPagamento.TabIndex = 51;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(897, 71);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(163, 20);
-            this.label33.TabIndex = 50;
-            this.label33.Text = "Forma de Pagamento";
-            // 
             // TelaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1350, 749);
             this.Controls.Add(this.tabControInicio);
             this.Controls.Add(this.menu);
             this.MainMenuStrip = this.menu;
@@ -1386,9 +1405,12 @@
             this.menu.PerformLayout();
             this.tabPageServico.ResumeLayout(false);
             this.tabPageServico.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblServico)).EndInit();
             this.tabPageOrcamento.ResumeLayout(false);
             this.tabPageOrcamento.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPageFornecedor.ResumeLayout(false);
             this.tabPageFornecedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblFornecedor)).EndInit();
@@ -1403,7 +1425,6 @@
             this.tabPageProduto.ResumeLayout(false);
             this.tabPageProduto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1539,5 +1560,7 @@
         private System.Windows.Forms.ComboBox cbxSituacao;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel lblErro;
     }
 }

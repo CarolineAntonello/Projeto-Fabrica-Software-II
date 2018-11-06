@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using SistemaGrafica.Domain.feature.Orcamentos;
 using SistemaGrafica.Domain.Feature.Orcamentos;
 
-namespace SistemaGrafica.Application.Feature.Orcamentos
+namespace SistemaGrafica.Aplication.Feature.Orcamentos
 {
     public class OrcamentoService : IOrcamentoService
     {

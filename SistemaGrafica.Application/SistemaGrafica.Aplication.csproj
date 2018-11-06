@@ -7,8 +7,8 @@
     <ProjectGuid>{E25A5D27-DB20-471F-B49E-3AE12FD81BB4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SistemaGrafica.Application</RootNamespace>
-    <AssemblyName>SistemaGrafica.Application</AssemblyName>
+    <RootNamespace>SistemaGrafica.Aplication</RootNamespace>
+    <AssemblyName>SistemaGrafica.Aplication</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

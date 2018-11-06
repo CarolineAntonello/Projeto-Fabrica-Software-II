@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using SistemaGrafica.Domain.feature.ClientesFisicos;
 using SistemaGrafica.Domain.Feature.ClientesFisicos;
 
-namespace SistemaGrafica.Application.Feature.ClientesFisicos
+namespace SistemaGrafica.Aplication.Feature.ClientesFisicos
 {
     public class ClienteFisicoService : IClienteFisicoService
     {

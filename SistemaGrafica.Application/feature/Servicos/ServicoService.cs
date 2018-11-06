@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using SistemaGrafica.Domain.feature.Servicos;
 using SistemaGrafica.Domain.Feature.Servicos;
 
-namespace SistemaGrafica.Application.Feature.Servicos
+namespace SistemaGrafica.Aplication.Feature.Servicos
 {
     public class ServicoService : IServicoService
     {

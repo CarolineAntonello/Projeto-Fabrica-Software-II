@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using SistemaGrafica.Domain.feature.Enderecos;
 
-namespace SistemaGrafica.Application.Feature.Enderecos
+namespace SistemaGrafica.Aplication.Feature.Enderecos
 {
     public class EnderecoService : IEnderecoService
     {

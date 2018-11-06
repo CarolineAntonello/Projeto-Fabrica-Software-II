@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Feature\Inicio\GerenciadorServico.cs" />
     <Compile Include="Feature\Inicio\TelaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +58,7 @@
     <Compile Include="Feature\Login\TelaLogin.Designer.cs">
       <DependentUpon>TelaLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="GerenciadorFormulario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Feature\Inicio\TelaInicial.resx">
@@ -89,6 +91,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Background\imagens\fundo-login-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaGrafica.Application\SistemaGrafica.Aplication.csproj">
+      <Project>{E25A5D27-DB20-471F-B49E-3AE12FD81BB4}</Project>
+      <Name>SistemaGrafica.Aplication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SistemaGrafica.Domain\SistemaGrafica.Domain.csproj">
+      <Project>{8F3AD181-7138-4380-9F07-E5EAE31EC87E}</Project>
+      <Name>SistemaGrafica.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

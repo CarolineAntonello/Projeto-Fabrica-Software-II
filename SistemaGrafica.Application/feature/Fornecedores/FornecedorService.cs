@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using SistemaGrafica.Domain.feature.Fornecedores;
 using SistemaGrafica.Domain.Feature.Fornecedores;
 
-namespace SistemaGrafica.Application.Feature.Fornecedores
+namespace SistemaGrafica.Aplication.Feature.Fornecedores
 {
     public class FornecedorService : IFornecedorService
     {
