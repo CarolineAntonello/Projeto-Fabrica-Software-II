@@ -223,7 +223,7 @@
             this.tabPageServico.Location = new System.Drawing.Point(4, 29);
             this.tabPageServico.Name = "tabPageServico";
             this.tabPageServico.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageServico.Size = new System.Drawing.Size(1342, 688);
+            this.tabPageServico.Size = new System.Drawing.Size(1342, 647);
             this.tabPageServico.TabIndex = 5;
             this.tabPageServico.Text = "Serviços";
             this.tabPageServico.UseVisualStyleBackColor = true;
@@ -232,12 +232,11 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblErro});
-            this.statusStrip1.Location = new System.Drawing.Point(3, 663);
+            this.statusStrip1.Location = new System.Drawing.Point(3, 622);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1336, 22);
             this.statusStrip1.TabIndex = 26;
             this.statusStrip1.Text = "statusStrip1";
-            this.statusStrip1.TextChanged += new System.EventHandler(this.txtEstadual_TextChanged);
             // 
             // lblErro
             // 
@@ -252,7 +251,6 @@
             this.btnAlterar.TabIndex = 25;
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.UseVisualStyleBackColor = true;
-            this.btnAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
             // 
             // btnExcluir
             // 
@@ -267,6 +265,7 @@
             // btnSalvar
             // 
             this.btnSalvar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnSalvar.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnSalvar.Location = new System.Drawing.Point(319, 262);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(231, 28);
@@ -290,6 +289,7 @@
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(1314, 149);
             this.txtDescricao.TabIndex = 21;
+            this.txtDescricao.TextChanged += new System.EventHandler(this.DescricaoServico);
             // 
             // txtValor
             // 
@@ -297,6 +297,7 @@
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(420, 26);
             this.txtValor.TabIndex = 19;
+            this.txtValor.TextChanged += new System.EventHandler(this.Valor);
             // 
             // txtServico
             // 
@@ -304,6 +305,7 @@
             this.txtServico.Name = "txtServico";
             this.txtServico.Size = new System.Drawing.Size(420, 26);
             this.txtServico.TabIndex = 17;
+            this.txtServico.TextChanged += new System.EventHandler(this.TipoServico);
             // 
             // label24
             // 
@@ -334,7 +336,7 @@
             this.dataGridViewTextBoxColumn7});
             this.tblServico.Location = new System.Drawing.Point(6, 301);
             this.tblServico.Name = "tblServico";
-            this.tblServico.Size = new System.Drawing.Size(1301, 321);
+            this.tblServico.Size = new System.Drawing.Size(1301, 300);
             this.tblServico.TabIndex = 16;
             // 
             // dataGridViewTextBoxColumn5
@@ -378,7 +380,7 @@
             this.tabPageOrcamento.Location = new System.Drawing.Point(4, 29);
             this.tabPageOrcamento.Name = "tabPageOrcamento";
             this.tabPageOrcamento.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageOrcamento.Size = new System.Drawing.Size(1342, 688);
+            this.tabPageOrcamento.Size = new System.Drawing.Size(1342, 647);
             this.tabPageOrcamento.TabIndex = 3;
             this.tabPageOrcamento.Text = "Orçamentos";
             this.tabPageOrcamento.UseVisualStyleBackColor = true;
@@ -588,7 +590,7 @@
             this.tabPageFornecedor.Location = new System.Drawing.Point(4, 29);
             this.tabPageFornecedor.Name = "tabPageFornecedor";
             this.tabPageFornecedor.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageFornecedor.Size = new System.Drawing.Size(1342, 688);
+            this.tabPageFornecedor.Size = new System.Drawing.Size(1342, 647);
             this.tabPageFornecedor.TabIndex = 4;
             this.tabPageFornecedor.Text = "Fornecedores";
             this.tabPageFornecedor.UseVisualStyleBackColor = true;
@@ -916,11 +918,10 @@
             this.tabPageCliente.Location = new System.Drawing.Point(4, 29);
             this.tabPageCliente.Name = "tabPageCliente";
             this.tabPageCliente.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCliente.Size = new System.Drawing.Size(1342, 688);
+            this.tabPageCliente.Size = new System.Drawing.Size(1342, 647);
             this.tabPageCliente.TabIndex = 0;
             this.tabPageCliente.Text = "Clientes";
             this.tabPageCliente.UseVisualStyleBackColor = true;
-            this.tabPageCliente.Click += new System.EventHandler(this.tabPageCliente_Click);
             // 
             // btnCAlterar
             // 
@@ -1157,7 +1158,6 @@
             this.txtEstadual.Name = "txtEstadual";
             this.txtEstadual.Size = new System.Drawing.Size(420, 26);
             this.txtEstadual.TabIndex = 8;
-            this.txtEstadual.TextChanged += new System.EventHandler(this.txtEstadual_TextChanged);
             // 
             // txtMunicipal
             // 
@@ -1235,7 +1235,7 @@
             this.tabControInicio.Location = new System.Drawing.Point(0, 28);
             this.tabControInicio.Name = "tabControInicio";
             this.tabControInicio.SelectedIndex = 0;
-            this.tabControInicio.Size = new System.Drawing.Size(1350, 721);
+            this.tabControInicio.Size = new System.Drawing.Size(1350, 680);
             this.tabControInicio.TabIndex = 0;
             // 
             // tabPageProduto
@@ -1253,7 +1253,7 @@
             this.tabPageProduto.Controls.Add(this.lblPNome);
             this.tabPageProduto.Location = new System.Drawing.Point(4, 29);
             this.tabPageProduto.Name = "tabPageProduto";
-            this.tabPageProduto.Size = new System.Drawing.Size(1342, 688);
+            this.tabPageProduto.Size = new System.Drawing.Size(1342, 647);
             this.tabPageProduto.TabIndex = 6;
             this.tabPageProduto.Text = "Produtos";
             this.tabPageProduto.UseVisualStyleBackColor = true;
@@ -1273,7 +1273,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1301, 361);
             this.dataGridView1.TabIndex = 32;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // dataGridViewTextBoxColumn8
             // 
@@ -1408,7 +1407,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1350, 749);
+            this.ClientSize = new System.Drawing.Size(1350, 708);
             this.Controls.Add(this.tabControInicio);
             this.Controls.Add(this.menu);
             this.MainMenuStrip = this.menu;
