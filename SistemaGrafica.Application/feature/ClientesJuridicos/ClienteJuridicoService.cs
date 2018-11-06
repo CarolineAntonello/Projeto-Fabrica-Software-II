@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using SistemaGrafica.Domain.feature.ClientesJuridicos;
 using SistemaGrafica.Domain.Feature.ClientesJuridicos;
 
-namespace SistemaGrafica.Application.Feature.ClientesJuridicos
+namespace SistemaGrafica.Aplication.Feature.ClientesJuridicos
 {
     public class ClienteJuridicoService : IClienteJuridicoService
     {

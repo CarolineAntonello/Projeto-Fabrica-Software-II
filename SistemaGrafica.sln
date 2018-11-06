@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{75F28920
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGrafica.Domain", "SistemaGrafica.Domain\SistemaGrafica.Domain.csproj", "{8F3AD181-7138-4380-9F07-E5EAE31EC87E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGrafica.Application", "SistemaGrafica.Application\SistemaGrafica.Application.csproj", "{E25A5D27-DB20-471F-B49E-3AE12FD81BB4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGrafica.Aplication", "SistemaGrafica.Application\SistemaGrafica.Aplication.csproj", "{E25A5D27-DB20-471F-B49E-3AE12FD81BB4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGrafica.Infra", "SistemaGrafica.Infra\SistemaGrafica.Infra.csproj", "{4EC28090-6CE1-4400-A0C3-531A46575121}"
 EndProject

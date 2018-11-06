@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using SistemaGrafica.Domain.feature.Produtos;
 
-namespace SistemaGrafica.Application.Feature.Produtos
+namespace SistemaGrafica.Aplication.Feature.Produtos
 {
     public class ProdutoService : IProdutoService
     {

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistemaGrafica.Application.Feature.Orcamentos
+namespace SistemaGrafica.Aplication.Feature.Orcamentos
 {
     public interface IOrcamentoService
     {

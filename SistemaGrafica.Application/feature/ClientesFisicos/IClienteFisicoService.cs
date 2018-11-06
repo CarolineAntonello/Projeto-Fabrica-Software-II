@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistemaGrafica.Application.Feature.ClientesFisicos
+namespace SistemaGrafica.Aplication.Feature.ClientesFisicos
 {
     public interface IClienteFisicoService
     {

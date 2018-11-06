@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistemaGrafica.Application.Feature.ClientesJuridicos
+namespace SistemaGrafica.Aplication.Feature.ClientesJuridicos
 {
     public interface IClienteJuridicoService
     {

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistemaGrafica.Application.Feature.Servicos
+namespace SistemaGrafica.Aplication.Feature.Servicos
 {
     public interface IServicoService
     {
