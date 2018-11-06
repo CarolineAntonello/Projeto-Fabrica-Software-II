@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SistemaGrafica.Infra.common.inscricaoEstadual
+namespace SistemaGrafica.Infra.common.inscricoesEstaduais
 {
     public class InscricaoEstadual
     {
@@ -28,7 +28,7 @@ namespace SistemaGrafica.Infra.common.inscricaoEstadual
 
             for (intPos = 1; intPos <= pInscr.Trim().Length; intPos++)
             {
-                if ((("0123456789P".IndexOf(pInscr.Substring((intPos - 1), 1), 0, System.StringComparison.OrdinalIgnoreCase) + 1)
+                if ((("0123456789P".IndexOf(pInscr.Substring((intPos - 1), 1), 0, StringComparison.OrdinalIgnoreCase) + 1)
 
                 > 0))
                 {

@@ -44,7 +44,7 @@
     <Compile Include="common\cpfs\CpfInvalidoException.cs" />
     <Compile Include="common\cpnjs\CNPJ.cs" />
     <Compile Include="common\cpnjs\CnpjInvalidoException.cs" />
-    <Compile Include="common\inscricaoEstadual\InscricaoEstadual.cs" />
+    <Compile Include="common\inscricoesEstaduais\InscricaoEstadual.cs" />
     <Compile Include="exceptions\InfrastructureException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

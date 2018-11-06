@@ -32,15 +32,15 @@ namespace SistemaGrafica.Presentation
             //string senha = "123";
             //if(txtUsuario.Text == usuario && txtSenha.Text == senha)
             //{
-            //    TelaInicial inicial = new TelaInicial();
-            //    inicial.Show();
-            //    this.Hide();
+            TelaInicial inicial = new TelaInicial();
+            inicial.Show();
+            this.Hide();
             //}
             //else
             //{
             //    MessageBox.Show("Login Incorreto!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             //}
-            
+
         }
     }
 }
