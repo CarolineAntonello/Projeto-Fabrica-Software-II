@@ -19,7 +19,7 @@ namespace SistemaGrafica.Infra.ORM.features.ClientesJuridicos
             Property(cj => cj.RazaoSocial).HasColumnName("RazaoSocial").HasColumnType("varchar").HasMaxLength(100).IsRequired();
             Property(cj => cj.TelefonePrincipal).HasColumnName("TelefonePrincipal").HasColumnType("int").IsRequired();
             Property(cj => cj.TelefoneSecundario).HasColumnName("TelefoneSecundario").HasColumnType("int").IsRequired();
-           // Property(cj => cj.InscricaoEstadual).HasColumnName("InscricaoEstadual").HasColumnType("int").IsRequired();
+            HasRequired(cj => cj.InscricaoEstadual);
             Property(cj => cj.InscricaoMunicipal).HasColumnName("InscricaoMunicipal").HasColumnType("int").IsRequired();
             Property(cf => cf.Endereco.Bairro);
             Property(cf => cf.Endereco.Cep);

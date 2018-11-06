@@ -1,7 +1,7 @@
 ﻿using SistemaGrafica.Domain.Base;
 using SistemaGrafica.Domain.feature.Enderecos;
 using SistemaGrafica.Infra.common.cpnj;
-using SistemaGrafica.Infra.common.inscricaoEstadual;
+using SistemaGrafica.Infra.common.inscricoesEstaduais;
 using System;
 using System.Collections.Generic;
 using System.Linq;
