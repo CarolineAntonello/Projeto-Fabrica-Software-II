@@ -14,7 +14,8 @@ namespace SistemaGrafica.Presentation.feature.Inicio
         {
             _service = service;
             InitializeComponent();
-            //btnSalvar.Enabled = false;
+            btnSalvar.Enabled = false;
+            //lblErro.Text = "Teste de erro";
         }
 
         public Servico NovoServico
@@ -51,12 +52,7 @@ namespace SistemaGrafica.Presentation.feature.Inicio
             }
         }
 
-        private void tabPageCliente_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtEstadual_TextChanged(object sender, EventArgs e)
+        private void TipoServico(object sender, EventArgs e)
         {
             try
             {
@@ -65,7 +61,6 @@ namespace SistemaGrafica.Presentation.feature.Inicio
                 {
                     _servico = new Servico();
                 }
-                _servico.ValorUnitario = Convert.ToInt32(txtValor.Text);
                 _servico.TipoServico = cbxTipo.Text;
                 _servico.Validar();
                 btnSalvar.Enabled = true;
@@ -78,14 +73,46 @@ namespace SistemaGrafica.Presentation.feature.Inicio
             }
         }
 
-        private void buttonAlterar_Click(object sender, EventArgs e)
+        private void Valor(object sender, EventArgs e)
         {
-
+            try
+            {
+                lblErro.Text = string.Empty;
+                if (_servico == null)
+                {
+                    _servico = new Servico();
+                }
+                _servico.ValorUnitario = Convert.ToInt32(txtValor.Text);
+                _servico.Validar();
+                btnSalvar.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                btnSalvar.Enabled = false;
+                lblErro.ForeColor = Color.Red;
+                lblErro.Text = ex.Message;
+            }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void DescricaoServico(object sender, EventArgs e)
         {
-
+            try
+            {
+                lblErro.Text = string.Empty;
+                if (_servico == null)
+                {
+                    _servico = new Servico();
+                }
+                _servico.Descricao = txtDescricao.Text;
+                _servico.Validar();
+                btnSalvar.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                btnSalvar.Enabled = false;
+                lblErro.ForeColor = Color.Red;
+                lblErro.Text = ex.Message;
+            }
         }
     }
 }
