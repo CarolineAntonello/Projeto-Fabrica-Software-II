@@ -25,7 +25,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaInicial));
             this.menu = new System.Windows.Forms.MenuStrip();
             this.toolStripPreferencia = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSobre = new System.Windows.Forms.ToolStripMenuItem();
@@ -157,6 +156,8 @@
             this.txtPNome = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.lblPNome = new System.Windows.Forms.Label();
+            this.statusStrip2 = new System.Windows.Forms.StatusStrip();
+            this.lblErroProduto = new System.Windows.Forms.ToolStripStatusLabel();
             this.menu.SuspendLayout();
             this.tabPageServico.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -172,6 +173,7 @@
             this.tabControInicio.SuspendLayout();
             this.tabPageProduto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.statusStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menu
@@ -496,7 +498,6 @@
             // 
             this.dataGridViewImageColumn1.DataPropertyName = "(none)";
             this.dataGridViewImageColumn1.HeaderText = "Editar";
-            this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewImageColumn1.ToolTipText = "Editar";
@@ -1239,6 +1240,7 @@
             // 
             // tabPageProduto
             // 
+            this.tabPageProduto.Controls.Add(this.statusStrip2);
             this.tabPageProduto.Controls.Add(this.dataGridView1);
             this.tabPageProduto.Controls.Add(this.btnPAlterar);
             this.tabPageProduto.Controls.Add(this.btnPExcluir);
@@ -1298,7 +1300,6 @@
             // 
             this.Editar.DataPropertyName = "(none)";
             this.Editar.HeaderText = "Editar";
-            this.Editar.Image = ((System.Drawing.Image)(resources.GetObject("Editar.Image")));
             this.Editar.Name = "Editar";
             this.Editar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Editar.ToolTipText = "Editar";
@@ -1388,6 +1389,21 @@
             this.lblPNome.TabIndex = 24;
             this.lblPNome.Text = "Nome";
             // 
+            // statusStrip2
+            // 
+            this.statusStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lblErroProduto});
+            this.statusStrip2.Location = new System.Drawing.Point(0, 666);
+            this.statusStrip2.Name = "statusStrip2";
+            this.statusStrip2.Size = new System.Drawing.Size(1342, 22);
+            this.statusStrip2.TabIndex = 33;
+            this.statusStrip2.Text = "statusStrip2";
+            // 
+            // lblErroProduto
+            // 
+            this.lblErroProduto.Name = "lblErroProduto";
+            this.lblErroProduto.Size = new System.Drawing.Size(0, 17);
+            // 
             // TelaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1425,6 +1441,8 @@
             this.tabPageProduto.ResumeLayout(false);
             this.tabPageProduto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.statusStrip2.ResumeLayout(false);
+            this.statusStrip2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1562,5 +1580,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel lblErro;
+        private System.Windows.Forms.StatusStrip statusStrip2;
+        private System.Windows.Forms.ToolStripStatusLabel lblErroProduto;
     }
 }

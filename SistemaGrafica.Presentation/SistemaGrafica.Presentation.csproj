@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Feature\Inicio\GerenciadorProduto.cs" />
     <Compile Include="Feature\Inicio\GerenciadorServico.cs" />
     <Compile Include="Feature\Inicio\TelaInicial.cs">
       <SubType>Form</SubType>
