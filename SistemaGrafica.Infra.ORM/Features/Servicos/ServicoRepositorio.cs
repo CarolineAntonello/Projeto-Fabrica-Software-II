@@ -13,6 +13,10 @@ namespace SistemaGrafica.Infra.ORM.Features.Servicos
         {
             _contexto = contexto;
         }
+        public ServicoRepositorio()
+        {
+
+        }
         public Servico Adicionar(Servico servico)
         {
             servico = _contexto.Servicos.Add(servico);

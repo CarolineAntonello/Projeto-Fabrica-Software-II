@@ -1,12 +1,8 @@
 ﻿using SistemaGrafica.Domain.Base;
+using SistemaGrafica.Domain.common.cnpjs;
 using SistemaGrafica.Domain.feature.Enderecos;
-using SistemaGrafica.Infra.common.cpnj;
 using SistemaGrafica.Infra.common.inscricoesEstaduais;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SistemaGrafica.Domain.feature.ClientesJuridicos
 {

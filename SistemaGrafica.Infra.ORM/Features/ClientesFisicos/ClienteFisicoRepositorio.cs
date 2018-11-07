@@ -16,7 +16,10 @@ namespace SistemaGrafica.Infra.ORM.Features.ClientesFisicos
         {
             _contexto = contexto;
         }
+        public ClienteFisicoRepositorio()
+        {
 
+        }
         public ClienteFisico Adicionar(ClienteFisico clienteFisico)
         {
             clienteFisico = _contexto.ClientesFisicos.Add(clienteFisico);

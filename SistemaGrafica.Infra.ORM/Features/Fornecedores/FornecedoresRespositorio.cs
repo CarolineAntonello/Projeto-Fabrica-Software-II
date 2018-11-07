@@ -13,6 +13,10 @@ namespace SistemaGrafica.Infra.ORM.Features.Fornecedores
         {
             _contexto = contexto;
         }
+        public FornecedoresRespositorio()
+        {
+
+        }
 
         public Fornecedor Adicionar(Fornecedor fornecedor)
         {

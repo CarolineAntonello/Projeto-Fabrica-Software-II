@@ -1,7 +1,7 @@
 ﻿using SistemaGrafica.Domain.Base;
+using SistemaGrafica.Domain.common.cnpjs;
 using SistemaGrafica.Domain.feature.Enderecos;
 using SistemaGrafica.Domain.Features.Fornecedores;
-using SistemaGrafica.Infra.common.cpnj;
 
 namespace SistemaGrafica.Domain.feature.Fornecedores
 {

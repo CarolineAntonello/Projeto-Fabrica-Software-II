@@ -13,7 +13,7 @@ namespace SistemaGrafica.Aplication.Feature.Produtos
 
         public ProdutoService(IProdutoRepositorio produtoRepositorio)
         {
-            produtoRepositorio = _produtoRepositorio;
+            _produtoRepositorio = produtoRepositorio;
         }
         public Produto Adicionar(Produto produto)
         {

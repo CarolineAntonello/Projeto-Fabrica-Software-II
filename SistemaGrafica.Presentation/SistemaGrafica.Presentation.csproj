@@ -45,6 +45,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Feature\Inicio\ControlProduto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Feature\Inicio\ControlProduto.Designer.cs">
+      <DependentUpon>ControlProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feature\Inicio\GerenciadorProduto.cs" />
     <Compile Include="Feature\Inicio\GerenciadorClienteFisico.cs" />
     <Compile Include="Feature\Inicio\GerenciadorClienteJuridico.cs" />
     <Compile Include="Feature\Inicio\GerenciadorFornecedor.cs" />
@@ -64,6 +71,9 @@
     <Compile Include="GerenciadorFormulario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Feature\Inicio\ControlProduto.resx">
+      <DependentUpon>ControlProduto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Feature\Inicio\TelaInicial.resx">
       <DependentUpon>TelaInicial.cs</DependentUpon>
     </EmbeddedResource>
