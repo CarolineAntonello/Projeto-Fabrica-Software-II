@@ -120,9 +120,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtComplemento = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textCEP = new System.Windows.Forms.TextBox();
+            this.txtCEP = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textCidade = new System.Windows.Forms.TextBox();
+            this.txtCidade = new System.Windows.Forms.TextBox();
             this.lblBairro = new System.Windows.Forms.Label();
             this.txtBairro = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -996,9 +996,9 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txtComplemento);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textCEP);
+            this.groupBox1.Controls.Add(this.txtCEP);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textCidade);
+            this.groupBox1.Controls.Add(this.txtCidade);
             this.groupBox1.Controls.Add(this.lblBairro);
             this.groupBox1.Controls.Add(this.txtBairro);
             this.groupBox1.Controls.Add(this.label4);
@@ -1068,12 +1068,12 @@
             this.label6.TabIndex = 17;
             this.label6.Text = "CEP";
             // 
-            // textCEP
+            // txtCEP
             // 
-            this.textCEP.Location = new System.Drawing.Point(6, 44);
-            this.textCEP.Name = "textCEP";
-            this.textCEP.Size = new System.Drawing.Size(300, 26);
-            this.textCEP.TabIndex = 16;
+            this.txtCEP.Location = new System.Drawing.Point(6, 44);
+            this.txtCEP.Name = "txtCEP";
+            this.txtCEP.Size = new System.Drawing.Size(300, 26);
+            this.txtCEP.TabIndex = 16;
             // 
             // label5
             // 
@@ -1084,12 +1084,12 @@
             this.label5.TabIndex = 15;
             this.label5.Text = "Cidade";
             // 
-            // textCidade
+            // txtCidade
             // 
-            this.textCidade.Location = new System.Drawing.Point(312, 45);
-            this.textCidade.Name = "textCidade";
-            this.textCidade.Size = new System.Drawing.Size(300, 26);
-            this.textCidade.TabIndex = 14;
+            this.txtCidade.Location = new System.Drawing.Point(312, 45);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(300, 26);
+            this.txtCidade.TabIndex = 14;
             // 
             // lblBairro
             // 
@@ -1493,9 +1493,9 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtComplemento;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textCEP;
+        private System.Windows.Forms.TextBox txtCEP;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textCidade;
+        private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.Label lblBairro;
         private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.Label label4;
