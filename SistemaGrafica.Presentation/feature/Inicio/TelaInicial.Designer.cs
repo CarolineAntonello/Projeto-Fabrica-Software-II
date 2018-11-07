@@ -141,12 +141,8 @@
             this.lblNome = new System.Windows.Forms.Label();
             this.tabControInicio = new System.Windows.Forms.TabControl();
             this.tabPageProduto = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Editar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Excluir = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.statusStrip2 = new System.Windows.Forms.StatusStrip();
+            this.lblErroProduto = new System.Windows.Forms.ToolStripStatusLabel();
             this.btnPAlterar = new System.Windows.Forms.Button();
             this.btnPExcluir = new System.Windows.Forms.Button();
             this.btnPSalvar = new System.Windows.Forms.Button();
@@ -156,8 +152,7 @@
             this.txtPNome = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.lblPNome = new System.Windows.Forms.Label();
-            this.statusStrip2 = new System.Windows.Forms.StatusStrip();
-            this.lblErroProduto = new System.Windows.Forms.ToolStripStatusLabel();
+            this.panelProduto = new System.Windows.Forms.Panel();
             this.menu.SuspendLayout();
             this.tabPageServico.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -172,7 +167,6 @@
             this.groupBox1.SuspendLayout();
             this.tabControInicio.SuspendLayout();
             this.tabPageProduto.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.statusStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -1240,8 +1234,8 @@
             // 
             // tabPageProduto
             // 
+            this.tabPageProduto.Controls.Add(this.panelProduto);
             this.tabPageProduto.Controls.Add(this.statusStrip2);
-            this.tabPageProduto.Controls.Add(this.dataGridView1);
             this.tabPageProduto.Controls.Add(this.btnPAlterar);
             this.tabPageProduto.Controls.Add(this.btnPExcluir);
             this.tabPageProduto.Controls.Add(this.btnPSalvar);
@@ -1257,58 +1251,22 @@
             this.tabPageProduto.TabIndex = 6;
             this.tabPageProduto.Text = "Produtos";
             this.tabPageProduto.UseVisualStyleBackColor = true;
+            this.tabPageProduto.Click += new System.EventHandler(this.tabPageProduto_Click);
             // 
-            // dataGridView1
+            // statusStrip2
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.Editar,
-            this.Excluir});
-            this.dataGridView1.Location = new System.Drawing.Point(8, 299);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1301, 361);
-            this.dataGridView1.TabIndex = 32;
+            this.statusStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lblErroProduto});
+            this.statusStrip2.Location = new System.Drawing.Point(0, 625);
+            this.statusStrip2.Name = "statusStrip2";
+            this.statusStrip2.Size = new System.Drawing.Size(1342, 22);
+            this.statusStrip2.TabIndex = 33;
+            this.statusStrip2.Text = "statusStrip2";
             // 
-            // dataGridViewTextBoxColumn8
+            // lblErroProduto
             // 
-            this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dataGridViewTextBoxColumn8.HeaderText = "Nome";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            this.dataGridViewTextBoxColumn8.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn8.Width = 76;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.HeaderText = "Valor Unitário";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.HeaderText = "Descrição";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            // 
-            // Editar
-            // 
-            this.Editar.DataPropertyName = "(none)";
-            this.Editar.HeaderText = "Editar";
-            this.Editar.Name = "Editar";
-            this.Editar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Editar.ToolTipText = "Editar";
-            // 
-            // Excluir
-            // 
-            this.Excluir.HeaderText = "";
-            this.Excluir.Name = "Excluir";
-            this.Excluir.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Excluir.Text = "Excluir";
+            this.lblErroProduto.Name = "lblErroProduto";
+            this.lblErroProduto.Size = new System.Drawing.Size(0, 17);
             // 
             // btnPAlterar
             // 
@@ -1332,6 +1290,7 @@
             // btnPSalvar
             // 
             this.btnPSalvar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnPSalvar.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnPSalvar.Location = new System.Drawing.Point(310, 260);
             this.btnPSalvar.Name = "btnPSalvar";
             this.btnPSalvar.Size = new System.Drawing.Size(231, 28);
@@ -1388,20 +1347,15 @@
             this.lblPNome.TabIndex = 24;
             this.lblPNome.Text = "Nome";
             // 
-            // statusStrip2
+            // panelProduto
             // 
-            this.statusStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lblErroProduto});
-            this.statusStrip2.Location = new System.Drawing.Point(0, 666);
-            this.statusStrip2.Name = "statusStrip2";
-            this.statusStrip2.Size = new System.Drawing.Size(1342, 22);
-            this.statusStrip2.TabIndex = 33;
-            this.statusStrip2.Text = "statusStrip2";
-            // 
-            // lblErroProduto
-            // 
-            this.lblErroProduto.Name = "lblErroProduto";
-            this.lblErroProduto.Size = new System.Drawing.Size(0, 17);
+            this.panelProduto.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelProduto.Location = new System.Drawing.Point(8, 307);
+            this.panelProduto.Name = "panelProduto";
+            this.panelProduto.Size = new System.Drawing.Size(1314, 304);
+            this.panelProduto.TabIndex = 34;
             // 
             // TelaInicial
             // 
@@ -1439,7 +1393,6 @@
             this.tabControInicio.ResumeLayout(false);
             this.tabPageProduto.ResumeLayout(false);
             this.tabPageProduto.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.statusStrip2.ResumeLayout(false);
             this.statusStrip2.PerformLayout();
             this.ResumeLayout(false);
@@ -1541,7 +1494,6 @@
         private System.Windows.Forms.Button btnCExcluir;
         private System.Windows.Forms.Button btnCSalvar;
         private System.Windows.Forms.TabPage tabPageProduto;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnPAlterar;
         private System.Windows.Forms.Button btnPExcluir;
         private System.Windows.Forms.Button btnPSalvar;
@@ -1551,11 +1503,6 @@
         private System.Windows.Forms.TextBox txtPNome;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label lblPNome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewImageColumn Editar;
-        private System.Windows.Forms.DataGridViewButtonColumn Excluir;
         private System.Windows.Forms.ComboBox cbxCliente;
         private System.Windows.Forms.ComboBox cbxProdutoFornecido;
         private System.Windows.Forms.DataGridView dataGridView2;
@@ -1581,5 +1528,6 @@
         private System.Windows.Forms.ToolStripStatusLabel lblErro;
         private System.Windows.Forms.StatusStrip statusStrip2;
         private System.Windows.Forms.ToolStripStatusLabel lblErroProduto;
+        private System.Windows.Forms.Panel panelProduto;
     }
 }

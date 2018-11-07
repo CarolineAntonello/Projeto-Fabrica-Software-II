@@ -40,16 +40,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="common\cpfs\CPF.cs" />
-    <Compile Include="common\cpfs\CpfInvalidoException.cs" />
-    <Compile Include="common\cpnjs\CNPJ.cs" />
-    <Compile Include="common\cpnjs\CnpjInvalidoException.cs" />
-    <Compile Include="common\inscricoesEstaduais\InscricaoEstadual.cs" />
-    <Compile Include="exceptions\InfrastructureException.cs" />
+    <Compile Include="IOC\RepositorioIOC.cs" />
+    <Compile Include="IOC\SingletonHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="feature\" />
+    <ProjectReference Include="..\SistemaGrafica.Domain\SistemaGrafica.Domain.csproj">
+      <Project>{8F3AD181-7138-4380-9F07-E5EAE31EC87E}</Project>
+      <Name>SistemaGrafica.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SistemaGrafica.Infra.ORM\SistemaGrafica.Infra.ORM.csproj">
+      <Project>{76B21C30-0608-4BCC-8F61-F97846531403}</Project>
+      <Name>SistemaGrafica.Infra.ORM</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

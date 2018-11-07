@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace SistemaGrafica.Infra.common.cpfs
+namespace SistemaGrafica.Domain.common.cpfs
 {
     public class CPF
     {

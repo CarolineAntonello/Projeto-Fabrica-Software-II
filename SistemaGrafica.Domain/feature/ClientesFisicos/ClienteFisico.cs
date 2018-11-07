@@ -1,7 +1,7 @@
 ﻿using SistemaGrafica.Domain.Base;
+using SistemaGrafica.Domain.common.cpfs;
 using SistemaGrafica.Domain.feature.ClientesJuridicos;
 using SistemaGrafica.Domain.feature.Enderecos;
-using SistemaGrafica.Infra.common.cpfs;
 using System;
 
 namespace SistemaGrafica.Domain.feature.ClientesFisicos

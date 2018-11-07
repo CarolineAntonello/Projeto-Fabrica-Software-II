@@ -1,12 +1,8 @@
 ﻿using SistemaGrafica.Domain.Base;
+using SistemaGrafica.Domain.common.cnpjs;
 using SistemaGrafica.Domain.feature.Enderecos;
-using SistemaGrafica.Infra.common.cpnj;
 using SistemaGrafica.Infra.common.inscricoesEstaduais;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SistemaGrafica.Domain.feature.ClientesJuridicos
 {
@@ -17,6 +13,7 @@ namespace SistemaGrafica.Domain.feature.ClientesJuridicos
         public CNPJ cnpj { get; set; }
         public string CNPJuridica { get; set; }
         public InscricaoEstadual InscricaoEstadual { get; set; }
+        public int inscricaoEstadual { get; set; }
         public int InscricaoMunicipal { get; set; }
         public Endereco Endereco { get; set; }
         public int TelefonePrincipal { get; set; }
