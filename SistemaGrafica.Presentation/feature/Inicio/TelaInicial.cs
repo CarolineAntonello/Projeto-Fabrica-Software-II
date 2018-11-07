@@ -56,6 +56,9 @@ namespace SistemaGrafica.Presentation.feature.Inicio
             {
                 _fornecedor = new Fornecedor();
                 _fornecedor.Nome = txtFNome.Text;
+                _fornecedor.InscricaoEstadual = Convert.ToInt32(txtFEstadual.Text);
+                _fornecedor.InscricaoMunicipal = Convert.ToInt32(txtFMunicipal.Text);
+                _fornecedor.RazaoSocial = txtFRazaoSocial.Text;
                 _fornecedor.CNPJuridica = txtFCPF.Text;
                 _fornecedor.Endereco.Bairro = txtFBairro.Text;
                 _fornecedor.Endereco.Cep = txtFCep.Text;
@@ -74,6 +77,9 @@ namespace SistemaGrafica.Presentation.feature.Inicio
             {
                 _fornecedor = new Fornecedor();
                 _fornecedor.Nome = txtFNome.Text;
+                _fornecedor.InscricaoEstadual = Convert.ToInt32(txtFEstadual.Text);
+                _fornecedor.InscricaoMunicipal = Convert.ToInt32(txtFMunicipal.Text);
+                _fornecedor.RazaoSocial = txtFRazaoSocial.Text;
                 _fornecedor.CNPJuridica = txtFCPF.Text;
                 _fornecedor.Endereco.Bairro = txtFBairro.Text;
                 _fornecedor.Endereco.Cep = txtFCep.Text;
@@ -86,6 +92,9 @@ namespace SistemaGrafica.Presentation.feature.Inicio
             set
             {
                 txtFNome.Text = string.Empty;
+                txtFEstadual.Text = string.Empty;
+                txtFMunicipal.Text = string.Empty;
+                txtFRazaoSocial.Text = string.Empty;
                 txtFCPF.Text = string.Empty;
                 txtFBairro.Text = string.Empty;
                 txtFCep.Text = string.Empty;
@@ -94,6 +103,9 @@ namespace SistemaGrafica.Presentation.feature.Inicio
                 cmxFUf.Text = string.Empty;
                 _fornecedor = value;
                 txtFNome.Text = _fornecedor.Nome;
+                txtFRazaoSocial.Text = _fornecedor.RazaoSocial;
+                txtFEstadual.Text = Convert.ToString(_fornecedor.InscricaoEstadual);
+                txtFMunicipal.Text = Convert.ToString(_fornecedor.InscricaoMunicipal);
                 txtFCPF.Text = _fornecedor.CNPJuridica;
                 txtFBairro.Text = _fornecedor.Endereco.Bairro;
                 txtFCep.Text = _fornecedor.Endereco.Cep;
@@ -251,7 +263,69 @@ namespace SistemaGrafica.Presentation.feature.Inicio
                 lblErroF.Text = ex.Message;
             }
         }
+        public void InscricaoEstadualF(object Sender, EventArgs e)
+        {
+            try
+            {
+                lblErroF.Text = string.Empty;
+                if (_fornecedor == null)
+                {
+                    _fornecedor = new Fornecedor();
+                }
+                _fornecedor.InscricaoEstadual = Convert.ToInt32(txtFEstadual.Text);
+                _fornecedor.Validar();
+                btnCSalvar.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                btnCSalvar.Enabled = false;
+                lblErroF.ForeColor = Color.Red;
+                lblErroF.Text = ex.Message;
+            }
 
+        }
+        public void InscricaoMunicipalF(object Sender, EventArgs e)
+        {
+            try
+            {
+                lblErroF.Text = string.Empty;
+                if (_fornecedor == null)
+                {
+                    _fornecedor = new Fornecedor();
+                }
+                _fornecedor.InscricaoMunicipal = Convert.ToInt32(txtFMunicipal.Text);
+                _fornecedor.Validar();
+                btnCSalvar.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                btnCSalvar.Enabled = false;
+                lblErroF.ForeColor = Color.Red;
+                lblErroF.Text = ex.Message;
+            }
+
+        }
+        public void RazaoSocialF(object Sender, EventArgs e)
+        {
+            try
+            {
+                lblErroF.Text = string.Empty;
+                if (_fornecedor == null)
+                {
+                    _fornecedor = new Fornecedor();
+                }
+                _fornecedor.RazaoSocial = txtFRazaoSocial.Text;
+                _fornecedor.Validar();
+                btnCSalvar.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                btnCSalvar.Enabled = false;
+                lblErroF.ForeColor = Color.Red;
+                lblErroF.Text = ex.Message;
+            }
+
+        }
 
 
         #endregion
@@ -264,6 +338,9 @@ namespace SistemaGrafica.Presentation.feature.Inicio
             {
                 _clienteJuridico = new ClienteJuridico();
                 _clienteJuridico.Nome = txtNome.Text;
+                _clienteJuridico.inscricaoEstadual = Convert.ToInt32(txtEstadual.Text);
+                _clienteJuridico.InscricaoMunicipal = Convert.ToInt32(txtMunicipal.Text);
+                _clienteJuridico.RazaoSocial = txtRazaoSocial.Text;
                 _clienteJuridico.CNPJuridica = txtCpf.Text;
                 _clienteJuridico.Endereco.Bairro = txtBairro.Text;
                 _clienteJuridico.Endereco.Cep = txtCEP.Text;
@@ -281,6 +358,9 @@ namespace SistemaGrafica.Presentation.feature.Inicio
             get
             {
                 _clienteJuridico.Nome = txtNome.Text;
+                _clienteJuridico.inscricaoEstadual = Convert.ToInt32(txtEstadual.Text);
+                _clienteJuridico.InscricaoMunicipal = Convert.ToInt32(txtMunicipal.Text);
+                _clienteJuridico.RazaoSocial = txtRazaoSocial.Text;
                 _clienteJuridico.CNPJuridica = txtCpf.Text;
                 _clienteJuridico.Endereco.Bairro = txtBairro.Text;
                 _clienteJuridico.Endereco.Cep = txtCEP.Text;
@@ -293,6 +373,9 @@ namespace SistemaGrafica.Presentation.feature.Inicio
             set
             {
                 txtNome.Text = string.Empty;
+                txtEstadual.Text = string.Empty;
+                txtMunicipal.Text = string.Empty;
+                txtRazaoSocial.Text = string.Empty;
                 txtCpf.Text = string.Empty;
                 txtBairro.Text = string.Empty;
                 txtCEP.Text = string.Empty;
@@ -301,6 +384,9 @@ namespace SistemaGrafica.Presentation.feature.Inicio
                 cmxUf.Text = string.Empty;
                 _clienteJuridico = value;
                 txtNome.Text = _clienteJuridico.Nome;
+                txtEstadual.Text = Convert.ToString(_clienteJuridico.inscricaoEstadual);
+                txtMunicipal.Text = Convert.ToString(_clienteJuridico.InscricaoMunicipal);
+                txtFRazaoSocial.Text = _clienteJuridico.RazaoSocial;
                 txtCpf.Text = _clienteJuridico.CNPJuridica;
                 txtBairro.Text = _clienteJuridico.Endereco.Bairro;
                 txtCEP.Text = _clienteJuridico.Endereco.Cep;
@@ -458,10 +544,69 @@ namespace SistemaGrafica.Presentation.feature.Inicio
                 lblErroCF.Text = ex.Message;
             }
         }
-
+        public void InscricaoEstadualCJ(object Sender, EventArgs e)
+        {
+            try
+            {
+                lblErroCF.Text = string.Empty;
+                if (_clienteJuridico == null)
+                {
+                    _clienteJuridico = new ClienteJuridico();
+                }
+                _clienteJuridico.inscricaoEstadual = Convert.ToInt32(txtEstadual.Text);
+                _clienteJuridico.Validar();
+                btnCSalvar.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                btnCSalvar.Enabled = false;
+                lblErroCF.ForeColor = Color.Red;
+                lblErroCF.Text = ex.Message;
+            }
+        }
+        public void InscricaoMunicipalCJ(object Sender, EventArgs e)
+        {
+            try
+            {
+                lblErroCF.Text = string.Empty;
+                if (_clienteJuridico == null)
+                {
+                    _clienteJuridico = new ClienteJuridico();
+                }
+                _clienteJuridico.InscricaoMunicipal = Convert.ToInt32(txtMunicipal.Text);
+                _clienteJuridico.Validar();
+                btnCSalvar.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                btnCSalvar.Enabled = false;
+                lblErroCF.ForeColor = Color.Red;
+                lblErroCF.Text = ex.Message;
+            }
+        }
+        public void RazaoSocialCJ(object Sender, EventArgs e)
+        {
+            try
+            {
+                lblErroCF.Text = string.Empty;
+                if (_clienteJuridico == null)
+                {
+                    _clienteJuridico = new ClienteJuridico();
+                }
+                _clienteJuridico.RazaoSocial = txtRazaoSocial.Text;
+                _clienteJuridico.Validar();
+                btnCSalvar.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                btnCSalvar.Enabled = false;
+                lblErroCF.ForeColor = Color.Red;
+                lblErroCF.Text = ex.Message;
+            }
+        }
 
         #endregion
-       
+
         #region ClienteFisico
         public ClienteFisico NovoClienteFisico
         {
@@ -762,5 +907,6 @@ namespace SistemaGrafica.Presentation.feature.Inicio
                 lblErro.Text = ex.Message;
             }
         }
+
     }
 }
