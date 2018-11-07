@@ -13,6 +13,10 @@ namespace SistemaGrafica.Infra.ORM.Features.ClientesJuridicos
         {
             _contexto = contexto;
         }
+        public ClienteJuridicoRepositorio()
+        {
+
+        }
         public ClienteJuridico Adicionar(ClienteJuridico clienteJuridico)
         {
             clienteJuridico = _contexto.ClientesJuridicos.Add(clienteJuridico);

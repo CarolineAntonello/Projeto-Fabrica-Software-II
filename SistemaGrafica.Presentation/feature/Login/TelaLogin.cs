@@ -30,22 +30,22 @@ namespace SistemaGrafica.Presentation
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
+
+            //IServicoRepositorio _servicoRepositorio;
+            //string usuario = "admin";
+            //string senha = "123";
+            //if (txtUsuario.Text == usuario && txtSenha.Text == senha)
+            //{
             ServicoService _service;
-            IServicoRepositorio _servicoRepositorio;
-            string usuario = "admin";
-            string senha = "123";
-            if (txtUsuario.Text == usuario && txtSenha.Text == senha)
-            {
-                
-                _service = new ServicoService(null);
-                TelaInicial inicial = new TelaInicial(_service);
-                inicial.Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Login Incorreto!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            _service = new ServicoService(null);
+            TelaInicial inicial = new TelaInicial(_service);
+            inicial.Show();
+            this.Hide();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Login Incorreto!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
 
         }
     }

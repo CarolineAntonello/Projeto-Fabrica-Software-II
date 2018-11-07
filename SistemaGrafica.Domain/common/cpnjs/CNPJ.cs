@@ -1,11 +1,7 @@
-﻿using SistemaGrafica.Infra.common.cpnjs;
+﻿using SistemaGrafica.Domain.common.cpnjs;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace SistemaGrafica.Infra.common.cpnj
+namespace SistemaGrafica.Domain.common.cnpjs
 {
     public class CNPJ
     {

@@ -41,7 +41,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\Entidade.cs" />
+    <Compile Include="common\cpfs\CPF.cs" />
+    <Compile Include="common\cpfs\CpfInvalidoException.cs" />
+    <Compile Include="common\cpnjs\CNPJ.cs" />
+    <Compile Include="common\cpnjs\CnpjInvalidoException.cs" />
+    <Compile Include="common\inscricoesEstaduais\InscricaoEstadual.cs" />
     <Compile Include="Exceptions\BusinessException.cs" />
+    <Compile Include="Exceptions\InfrastructureException.cs" />
     <Compile Include="Exceptions\UnsupportedOperationException.cs" />
     <Compile Include="Feature\ClientesFisicos\ClienteCPFVazioException.cs" />
     <Compile Include="Feature\ClientesFisicos\ClienteFisico.cs" />
@@ -82,12 +88,6 @@
     <Compile Include="Feature\Servicos\ServicoTipoServicoVazioException.cs" />
     <Compile Include="Feature\Servicos\ServicoValorUnitarioMenorQueZeroException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SistemaGrafica.Infra\SistemaGrafica.Infra.csproj">
-      <Project>{4ec28090-6ce1-4400-a0c3-531a46575121}</Project>
-      <Name>SistemaGrafica.Infra</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

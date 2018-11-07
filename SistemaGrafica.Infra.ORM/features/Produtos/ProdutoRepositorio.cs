@@ -13,6 +13,10 @@ namespace SistemaGrafica.Infra.ORM.features.Produtos
         {
             _contexto = contexto;
         }
+        public ProdutoRepositorio()
+        {
+
+        }
 
         public Produto Adicionar(Produto produto)
         {
