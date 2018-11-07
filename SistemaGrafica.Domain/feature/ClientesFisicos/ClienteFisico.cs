@@ -11,7 +11,7 @@ namespace SistemaGrafica.Domain.feature.ClientesFisicos
         public ClienteFisico()
         {
             Endereco = new Endereco();
-            Cpf = new CPF()
+            Cpf = new CPF();
         }
         public string Nome { get; set; }
         public CPF Cpf { get; set; }

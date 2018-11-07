@@ -1,21 +1,20 @@
-﻿using System;
+﻿using SistemaGrafica.Aplication.Feature.Fornecedores;
+using SistemaGrafica.Domain.feature.Fornecedores;
+using SistemaGrafica.Presentation.feature.Inicio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SistemaGrafica.Aplication.Feature.ClientesFisicos;
-using SistemaGrafica.Domain.feature.ClientesFisicos;
-using SistemaGrafica.Domain.feature.Servicos;
-using SistemaGrafica.Presentation.feature.Inicio;
 
 namespace SistemaGrafica.Presentation.Feature.Inicio
 {
-    class GerenciadorClienteFisico : GerenciadorFormulario
+    class GerenciadorFornecedor : GerenciadorFormulario
     {
-        ClienteFisicoService _service;
+        FornecedorService _service;
 
-        public GerenciadorClienteFisico(ClienteFisicoService service)
+        public GerenciadorFornecedor(FornecedorService service)
         {
             _service = service;
         }
@@ -26,8 +25,8 @@ namespace SistemaGrafica.Presentation.Feature.Inicio
 
             if (result == DialogResult.OK)
             {
-                _service.Adicionar(form.NovoClienteFisico);
-                IEnumerable<ClienteFisico> clientesFisicos = _service.BuscarTodos();
+                _service.Adicionar(form.NovoFornecedor);
+                IEnumerable<Fornecedor> fornecedores = _service.BuscarTodos();
                 //_controlSerie.PopularListagemSeries(series);
             }
         }
@@ -53,3 +52,5 @@ namespace SistemaGrafica.Presentation.Feature.Inicio
         }
     }
 }
+
+

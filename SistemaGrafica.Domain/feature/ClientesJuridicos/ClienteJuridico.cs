@@ -17,6 +17,7 @@ namespace SistemaGrafica.Domain.feature.ClientesJuridicos
         public CNPJ cnpj { get; set; }
         public string CNPJuridica { get; set; }
         public InscricaoEstadual InscricaoEstadual { get; set; }
+        public int inscricaoEstadual { get; set; }
         public int InscricaoMunicipal { get; set; }
         public Endereco Endereco { get; set; }
         public int TelefonePrincipal { get; set; }

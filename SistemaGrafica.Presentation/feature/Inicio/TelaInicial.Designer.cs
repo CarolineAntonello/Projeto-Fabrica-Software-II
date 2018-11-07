@@ -79,7 +79,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtFNumero = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmxFUf = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.txtFComplemento = new System.Windows.Forms.TextBox();
@@ -156,6 +156,10 @@
             this.txtPNome = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.lblPNome = new System.Windows.Forms.Label();
+            this.statusStrip2 = new System.Windows.Forms.StatusStrip();
+            this.lblErroCF = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusStrip3 = new System.Windows.Forms.StatusStrip();
+            this.lblErroF = new System.Windows.Forms.ToolStripStatusLabel();
             this.menu.SuspendLayout();
             this.tabPageServico.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -171,6 +175,8 @@
             this.tabControInicio.SuspendLayout();
             this.tabPageProduto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.statusStrip2.SuspendLayout();
+            this.statusStrip3.SuspendLayout();
             this.SuspendLayout();
             // 
             // menu
@@ -566,6 +572,7 @@
             // 
             // tabPageFornecedor
             // 
+            this.tabPageFornecedor.Controls.Add(this.statusStrip3);
             this.tabPageFornecedor.Controls.Add(this.btnFAlterar);
             this.tabPageFornecedor.Controls.Add(this.btnFExcluir);
             this.tabPageFornecedor.Controls.Add(this.btnFSalvar);
@@ -632,7 +639,7 @@
             this.dataGridViewTextBoxColumn4});
             this.tblFornecedor.Location = new System.Drawing.Point(8, 299);
             this.tblFornecedor.Name = "tblFornecedor";
-            this.tblFornecedor.Size = new System.Drawing.Size(1301, 361);
+            this.tblFornecedor.Size = new System.Drawing.Size(1301, 326);
             this.tblFornecedor.TabIndex = 15;
             // 
             // dataGridViewTextBoxColumn1
@@ -663,7 +670,7 @@
             // 
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.txtFNumero);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.cmxFUf);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.txtFComplemento);
@@ -698,13 +705,13 @@
             this.txtFNumero.Size = new System.Drawing.Size(288, 26);
             this.txtFNumero.TabIndex = 23;
             // 
-            // comboBox1
+            // cmxFUf
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(924, 43);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(300, 28);
-            this.comboBox1.TabIndex = 22;
+            this.cmxFUf.FormattingEnabled = true;
+            this.cmxFUf.Location = new System.Drawing.Point(924, 43);
+            this.cmxFUf.Name = "cmxFUf";
+            this.cmxFUf.Size = new System.Drawing.Size(300, 28);
+            this.cmxFUf.TabIndex = 22;
             // 
             // label11
             // 
@@ -894,6 +901,7 @@
             // 
             // tabPageCliente
             // 
+            this.tabPageCliente.Controls.Add(this.statusStrip2);
             this.tabPageCliente.Controls.Add(this.btnCAlterar);
             this.tabPageCliente.Controls.Add(this.btnCExcluir);
             this.tabPageCliente.Controls.Add(this.btnCSalvar);
@@ -960,7 +968,7 @@
             this.columnRazaoSocial});
             this.tblCliente.Location = new System.Drawing.Point(8, 299);
             this.tblCliente.Name = "tblCliente";
-            this.tblCliente.Size = new System.Drawing.Size(1301, 361);
+            this.tblCliente.Size = new System.Drawing.Size(1301, 325);
             this.tblCliente.TabIndex = 15;
             // 
             // columnNome
@@ -1384,6 +1392,36 @@
             this.lblPNome.TabIndex = 24;
             this.lblPNome.Text = "Nome";
             // 
+            // statusStrip2
+            // 
+            this.statusStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lblErroCF});
+            this.statusStrip2.Location = new System.Drawing.Point(3, 622);
+            this.statusStrip2.Name = "statusStrip2";
+            this.statusStrip2.Size = new System.Drawing.Size(1336, 22);
+            this.statusStrip2.TabIndex = 29;
+            this.statusStrip2.Text = "statusStrip2";
+            // 
+            // lblErroCF
+            // 
+            this.lblErroCF.Name = "lblErroCF";
+            this.lblErroCF.Size = new System.Drawing.Size(0, 17);
+            // 
+            // statusStrip3
+            // 
+            this.statusStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lblErroF});
+            this.statusStrip3.Location = new System.Drawing.Point(3, 622);
+            this.statusStrip3.Name = "statusStrip3";
+            this.statusStrip3.Size = new System.Drawing.Size(1336, 22);
+            this.statusStrip3.TabIndex = 29;
+            this.statusStrip3.Text = "statusStrip3";
+            // 
+            // lblErroF
+            // 
+            this.lblErroF.Name = "lblErroF";
+            this.lblErroF.Size = new System.Drawing.Size(0, 17);
+            // 
             // TelaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1421,6 +1459,10 @@
             this.tabPageProduto.ResumeLayout(false);
             this.tabPageProduto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.statusStrip2.ResumeLayout(false);
+            this.statusStrip2.PerformLayout();
+            this.statusStrip3.ResumeLayout(false);
+            this.statusStrip3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1455,7 +1497,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtFNumero;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmxFUf;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtFComplemento;
@@ -1558,5 +1600,9 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel lblErro;
+        private System.Windows.Forms.StatusStrip statusStrip2;
+        private System.Windows.Forms.ToolStripStatusLabel lblErroCF;
+        private System.Windows.Forms.StatusStrip statusStrip3;
+        private System.Windows.Forms.ToolStripStatusLabel lblErroF;
     }
 }
