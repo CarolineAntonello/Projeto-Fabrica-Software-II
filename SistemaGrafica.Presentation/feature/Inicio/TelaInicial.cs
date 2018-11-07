@@ -1,5 +1,11 @@
-﻿using SistemaGrafica.Aplication.Feature.Produtos;
+﻿using SistemaGrafica.Aplication.Feature.ClientesFisicos;
+using SistemaGrafica.Aplication.Feature.ClientesJuridicos;
+using SistemaGrafica.Aplication.Feature.Fornecedores;
+using SistemaGrafica.Aplication.Feature.Produtos;
 using SistemaGrafica.Aplication.Feature.Servicos;
+using SistemaGrafica.Domain.feature.ClientesFisicos;
+using SistemaGrafica.Domain.feature.ClientesJuridicos;
+using SistemaGrafica.Domain.feature.Fornecedores;
 using SistemaGrafica.Domain.feature.Produtos;
 using SistemaGrafica.Domain.feature.Servicos;
 using SistemaGrafica.Infra.IOC;

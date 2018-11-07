@@ -141,7 +141,7 @@
             this.lblNome = new System.Windows.Forms.Label();
             this.tabControInicio = new System.Windows.Forms.TabControl();
             this.tabPageProduto = new System.Windows.Forms.TabPage();
-            this.statusStrip2 = new System.Windows.Forms.StatusStrip();
+            //this.statusStrip2 = new System.Windows.Forms.StatusStrip();
             this.lblErroProduto = new System.Windows.Forms.ToolStripStatusLabel();
             this.btnPAlterar = new System.Windows.Forms.Button();
             this.btnPExcluir = new System.Windows.Forms.Button();
@@ -171,7 +171,7 @@
             this.groupBox1.SuspendLayout();
             this.tabControInicio.SuspendLayout();
             this.tabPageProduto.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.statusStrip2.SuspendLayout();
             this.statusStrip3.SuspendLayout();
             this.SuspendLayout();
@@ -1431,7 +1431,7 @@
             this.tabControInicio.ResumeLayout(false);
             this.tabPageProduto.ResumeLayout(false);
             this.tabPageProduto.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.statusStrip2.ResumeLayout(false);
             this.statusStrip2.PerformLayout();
             this.statusStrip3.ResumeLayout(false);
