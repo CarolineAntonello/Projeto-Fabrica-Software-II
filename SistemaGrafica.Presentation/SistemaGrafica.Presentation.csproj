@@ -52,6 +52,9 @@
       <DependentUpon>ControlProduto.cs</DependentUpon>
     </Compile>
     <Compile Include="Feature\Inicio\GerenciadorProduto.cs" />
+    <Compile Include="Feature\Inicio\GerenciadorClienteFisico.cs" />
+    <Compile Include="Feature\Inicio\GerenciadorClienteJuridico.cs" />
+    <Compile Include="Feature\Inicio\GerenciadorFornecedor.cs" />
     <Compile Include="Feature\Inicio\GerenciadorServico.cs" />
     <Compile Include="Feature\Inicio\TelaInicial.cs">
       <SubType>Form</SubType>

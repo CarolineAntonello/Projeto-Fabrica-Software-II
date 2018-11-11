@@ -8,13 +8,18 @@ namespace SistemaGrafica.Domain.feature.ClientesFisicos
 {
     public class ClienteFisico : Entidade
     {
+        public ClienteFisico()
+        {
+            Endereco = new Endereco();
+            Cpf = new CPF();
+        }
         public string Nome { get; set; }
         public CPF Cpf { get; set; }
         public string CPFisica { get; set; }
         public Endereco Endereco { get; set; }
         public int TelefonePrincipal { get; set; }
         public int TelefoneSecundario { get; set; }
-
+       
         public override void Validar()
         {
             if (String.IsNullOrEmpty(Nome))
